@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="episodios.html">Episodios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article class="top-section">
+            <p>Los simpsons</p>
+        </article>
+        
+        <article class="contact">
+            <div class="contact-form">
+                <form action="#" method="post">
+                    <label for="usuario">Nombre de Usuario:</label>
+                    <input type="text" id="uruario" name="usuario" required>
+
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="telefono">Número de Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+                    <label for="nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" id="nacimiento" name="nacimiento" required>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <ul class="redsocial-icons">
+            <li><a href="https://www.facebook.com/TheSimpsons/"><img src="facebook3.jpeg" alt="Facebook"></a></li>
+            <li><a href="https://twitter.com/TheSimpsons"><img src="twitter1.jpeg" alt="Twitter"></a></li>
+        </ul>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fandom Page de Los Simpson</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <div class="contenedorImagen">
+            <img class="logoNav"  src="Imagenes/simpsons3.png" alt="icono">
+        </div>
+        <nav class="navbarPc">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="personajes.html">Personajes</a></li>
+                <li><a href="episodios.html">Episodios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                
+            </ul>
+            
+        </nav>
+        <nav class="responsive_navbar">
+            <li class="li_res"><a class="link_res" href="index.html">Home</a></li>
+            <li class="li_res"><a class="link_res" href="personajes.html">Personajes</a></li>
+            <li class="li_res"><a class="link_res" href="episodios.html">Episodios</a></li>
+            <li class="li_res"><a class="link_res" href="contacto.html">Contacto</a></li>
+
+        </nav>
+            <div class="toggle_btn">
+                <a href=""><i class="fa-solid fa-bars"></i></a>
+            </div>
+            <div class="contenedorLog">
+                <a href="login"><i class="fa-solid fa-right-to-bracket" id="loginBtn"></i></a>
+            </div>
+        
+    </header>
+    <main>
+        <div class="contenedorMenu" id="contenedorMenu">
+            <div class="item">
+            <h5>Trivia</h5>
+            <a href=""><img src="Imagenes/lisa.png" alt="" id="trivia"></a>
+            </div>
+            <div class="item">
+            <h5>Memes</h5>
+            <a href=""><img src="Imagenes/homero.png" alt="" id="meme"></a>
+            </div>
+            <div class="item">
+            <h5>Nosotros</h5>
+            <a href=""><img src="Imagenes/bart.png" alt=""></a>
+            </div>
+            <div class="item">
+            <h5>Galeria</h5>
+            <a href=""><img src="Imagenes/marge1.png" alt=""></a>
+            </div>
+            <div class="item">
+            <h5>Foro</h5>
+            <a href=""><img src="Imagenes/maggie.png" alt=""></a>
+            </div>
+        </div>
+        <div class="contenedorMensaje" id="contenedorMensaje">
+            <p>Bienvenido a la página de fans de Los Simpsons!!!</p>
+
+            <p>Hola, entusiasta de Springfield!!! ¡Es genial tenerte aquí! Prepárate para sumergirte en el vibrante y colorido mundo de Los Simpsons, donde la diversión y las aventuras nunca terminan.</p>
+
+            <p>Desde las travesuras de Bart hasta las ocurrencias de Homero, pasando por las reflexiones de Lisa y las travesuras de Maggie, este es el lugar perfecto para todos los amantes de la familia amarilla más famosa de la televisión.</p>
+
+            <p>Explora nuestras secciones llenas de memes hilarantes, curiosidades fascinantes, debates candentes y todo lo que necesitas para alimentar tu obsesión por Los Simpsons.</p>
+
+            <p>Únete a la diversión, registrate (<i class="fa-solid fa-right-to-bracket"></i>), comparte tus momentos favoritos y haz nuevos amigos con quienes celebrar esta icónica serie de animación</p>
+
+            <p>Bienvenido a Springfield, donde cada día es una nueva aventura!!!!</p>
+            
+        </div>
+        <div class="contenedorTrivia" id="contenedorTrivia">
+            <h4>Cuanto sabes sobre los Simpsons</h4>
+            <p id="question">¿El nombre completo de Ned Flanders es Nedward Flanders.?</p>
+            <button id="trueBtn">Verdadero</button>
+            <button id="falseBtn">Falso</button>
+            <button id="salirBtn">Salir</button>
+            <p id="result"></p>
+        </div>
+
+        <div class="contenedorLogin" id="login">
+            <h1>Iniciar Seción / Registrarse</h1>
+            <p>Si ya tenes cuenta, ingresá tus datos para iniciar sesión</p>
+            <form action="" class="formLogin" id="formLogin">
+                <label for="usuario">Nombre de Usuario</label>
+                <input type="text" name="usuario" id="usuario" placeholder="Ingrese nombre de usuario" required>
+                <label for="pasword">Contraseña</label>
+                <input type="password" name="pasword" id="pasword" placeholder="Ingrese su contraseña" required>
+                <div class="botones">
+                    <button id="inicioBtn">Iniciar Seción</button>
+                    <h4>Si aun no tienes cuenta aquí puedes crearla</h4>
+                    <button id="nuevoUsu">Crear Cuenta</button>
+                </div>
+            </form>
+    
+        </div>
+        <div class="contenedorRegistro" id="registro">
+            <h1>Completa tu Registo</h1>
+            <form action="" class="formRegistro" id="formRegistro">
+                <div class="contenedorInput">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" required>
+                </div>
+                <div class="contenedorInput">
+                    <label for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido" required>
+                </div>
+                <div class="contenedorInput">
+                    <label for="email">E-Mail</label>
+                    <input type="email" name="email" id="email" placeholder="Ingrese su email" required>
+                </div>
+                <div class="contenedorInput">
+                    <label for="noticia">Suscribete a las Noticias</label>
+                    <input type="checkbox" name="noticia" id="noticia" >
+                </div>
+                <div class="contenedorInput">
+                    <label for="usuario">Nombre Usuario(Nik Name)</label>
+                    <input type="text" placeholder="Elija el nombre de usuario" required>
+                </div>
+                <div class="contenedorInput">
+                    <label for="pasword">Contraseña</label>
+                    <input type="password" name="pasword" id="pasword" placeholder="Ingrese su contraseña" required>
+                </div>
+                <div class="seleccionPersonaje">
+                    <h3>Que personaje/s de la Familia le gusta más</h3>
+                
+                <div class="contenedorInput">
+                    <label for="homero">Homero</label>
+                    <input type="radio" name="homero" id="homero">
+                </div>
+                <div class="contenedorInput">
+                    <label for="marge">Marge</label>
+                    <input type="radio" name="marge" id="marge">
+                </div>
+                <div class="contenedorInput">
+                    <label for="Bart">Bart</label>
+                    <input type="radio" name="bart" id="bart">
+                </div>
+                <div class="contenedorInput">
+                    <label for="Lisa">Lisa</label>
+                    <input type="radio" name="lisa" id="lisa">
+                </div>
+                <div class="contenedorInput">
+                    <label for="magie">Magie</label>
+                    <input type="radio" name="lisa" id="lisa">
+                </div>
+                </div>
+                <button id="btnReg" class="btnReg">Finalizar Registro</button>
+                
+            </form>
+        </div>
+
+        <div class="contenedorMeme" id="contenedorMeme">
+            <div class="gridImagenes">
+              <div class="itemImg"><img src="imagenes/memes/meme1.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme2.jpeg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme3.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme4.jpeg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme5.jpeg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme6.jpeg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme7.jpeg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme8.jpeg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme9.jpeg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme10.jpeg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme11.jpeg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme12.jpeg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme13.jpeg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme14.jpeg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme15.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme16.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme17.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme18.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme19.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme20.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme21.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme22.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme23.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme24.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme25.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme26.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme27.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme28.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme29.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme30.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme31.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme32.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme33.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme34.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme35.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme36.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme37.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme38.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme39.jpg" alt="" /></div>
+              <div class="itemImg"><img src="imagenes/memes/meme40.jpg" alt="" /></div>
+            </div>
+            <button class="salir" id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+    </main>
+    
+    
+    <footer>
+        <p class="copy">© 2024 - Página de Fans de Los Simpsons. Todos los derechos reservados. Los Simpsons y todos los personajes relacionados son marcas comerciales de Twentieth Century Fox Film Corporation. Este sitio web es una creación de "Grupo 17".</h1>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
