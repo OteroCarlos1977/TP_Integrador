@@ -27,9 +27,10 @@ body
     width: 100%;
     height: 100vh;
     background-image: url(Imagenes/simpsonsback.jpg);
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
 /*********************************************
@@ -853,3 +854,25 @@ footer
 
 
 }
+
+/* Estilo Tarjetas de Personajes */
+.card {
+    width: 18rem;
+    height: 30rem; 
+    color: rgb(0, 0, 0);
+}
+.card-img-top {
+    height: 180px; 
+    object-fit: cover; 
+}
+.card-text {
+    overflow-y: auto; 
+    max-height: 200px; 
+    font-family: "Rock Salt", cursive; 
+    font-weight: 400;
+    font-style: normal; 
+}
+.row {
+    margin-bottom: 30px; 
+}
+
