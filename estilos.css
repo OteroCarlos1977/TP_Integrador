@@ -911,7 +911,7 @@ footer
 
 .contact-form label {
     display: block;
-    margin-bottom: 10px; 
+    margin-bottom: 15px; 
 }
 
 .contact-form input {
@@ -919,6 +919,26 @@ footer
     padding: 8px; 
     margin-bottom: 15px; 
     font-family: "Rock Salt", cursive;
+}
+
+.contact-form .radio-container {
+    display: flex;
+    align-items: center;
+}
+
+.contact-form input[type="radio"] {
+    margin-right: 10px; 
+}
+
+.contact-form input[type="radio"] + label {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="radio"]:checked + label {
+    background-color: #eaeaea; 
 }
 
 /* Animación de botón Enviar en pagina de Contacto */
