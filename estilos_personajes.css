@@ -1,0 +1,229 @@
+/*********************************************
+            ESTILOS PARA TEXTO
+ ********************************************/
+
+.rock-salt-regular {
+    font-family: "Rock Salt", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*********************************************
+            RESETEO 
+ ********************************************/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rock Salt", cursive;
+}
+
+/*********************************************
+            ESTILOS PARA BODY
+ ********************************************/
+body
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Imagenes/simpsonsback.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*********************************************
+            ESTILOS PARA HEADER BARRA NAV
+ ********************************************/
+header {
+    position: fixed;
+    top: 0;
+    width: 100%; 
+    height: 40px; 
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    align-items: center;
+}
+
+.contenedorImagen
+{
+    width: 130px;
+    height: 38px;
+    align-content: start;
+    align-items: start;
+}
+
+.logoNav
+{
+    width: 120px;
+    height: 34px;
+}
+
+.navbarPc {
+    
+    text-align:end;
+    width: 900px;
+    box-sizing: content-box;
+    
+}
+
+.navbarPc ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbarPc ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.navbarPc ul li a {
+    
+    text-decoration: none;
+    color: rgb(187, 200, 7);
+    font-size: 23px;
+    font-family: "Rock Salt", cursive;
+    font-weight: bolder;
+}
+
+.toggle_btn a
+{
+    color: rgb(187, 200, 7);
+    font-size: 30px;
+    font-weight: bolder;
+    align-content: center;
+    display: none;
+    margin-right: 30px;
+   
+}
+
+.contenedorLog a
+{
+    color: rgb(187, 200, 7);
+    font-size: 30px;
+    font-weight: bolder;
+    align-content: center;
+    margin-right: 30px;
+}
+
+/*********************************************
+            ESTILOS PARA RESP BARRA NAV
+ ********************************************/
+
+.responsive_navbar
+{
+    display: none;
+    position: absolute;
+    right: 3rem;
+    top: 40px;
+    width: 50vw;
+    height: 0;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-decoration: none;
+}
+
+.open 
+{
+    height: 210px;
+}
+
+.responsive_navbar .li_res
+{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.responsive_navbar .li_res .link_res
+{
+    text-decoration: none;
+    color:rgb(187, 200, 7);
+    
+}
+
+.responsive_navbar .li_res .link_res:hover
+{
+    text-decoration: none;
+    
+    
+}
+
+/*********************************************
+            ESTILOS PARA MAIN
+ ********************************************/
+
+
+
+main
+{
+    display: flex;
+}
+
+
+/*********************************************
+            ESTILOS PARA FOOTER
+ ********************************************/
+
+footer
+{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+    bottom: 0;
+}
+
+.copy 
+{
+    margin: 0 50px;
+    color:rgb(187, 200, 7) ;
+    font-size: clamp(8px, 2vw, 12px);
+
+
+}
+
+
+/*********************************************
+    ESTILOS PARA CONTENEDOR PERSONAJES
+ ********************************************/
+
+.container 
+{
+    margin-top: 60px;
+}
+.card {
+    width: 18rem;
+    height: 30rem; 
+    color: rgb(187, 200, 7);
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+.card-img-top {
+    height: 180px; 
+    object-fit: cover; 
+    border-radius: 20px;
+    background-color: transparent;
+}
+.card-text {
+    overflow-y: auto; 
+    max-height: 200px; 
+    font-family: "Rock Salt", cursive; 
+    font-weight: 400;
+    font-style: normal; 
+}
+.row {
+    margin-bottom: 30px; 
+}
+
+
+

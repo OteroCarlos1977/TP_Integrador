@@ -164,7 +164,9 @@ main
     display: flex;
 }
 
-/***Estilos Contenedor Menú ***/
+/*********************************************
+            ESTILOS PARA MENÚ
+ ********************************************/
 .contenedorMenu
 {
     display: block;
@@ -177,15 +179,20 @@ main
     align-content: center;
     align-items: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .contenedorMenu img
 {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    filter: drop-shadow(3px 2px 5px rgb(187, 200, 7));
 }
-/***Estilos Contenedor Mensaje ***/
+
+/*********************************************
+            ESTILOS PARA MENSAJE
+ ********************************************/
 .contenedorMensaje
 {
     display: block;
@@ -206,7 +213,10 @@ main
     color: rgb(132, 17, 226);
 }
 
-/***Estilos Contenedor Trivia ***/
+
+/*********************************************
+            ESTILOS PARA TRIVIA
+ ********************************************/
 .contenedorTrivia
 {
     display: none;
@@ -274,7 +284,9 @@ main
    padding: 20px;
 }
 
-/***Estilos Contenedor Login ***/
+/*********************************************
+            ESTILOS PARA LOGIN
+ ********************************************/
 
 .contenedorLogin {
     display: none;
@@ -364,7 +376,12 @@ main
 {
     margin: 20px 0;
 }
-/***Estilos Contenedor Registro ***/
+
+
+/*********************************************
+            ESTILOS PARA REGISTRO
+ ********************************************/
+
 .contenedorRegistro {
     
     display: none;
@@ -474,7 +491,9 @@ input[type="checkbox"], input[type="radio"]
     display: none;
 }
 
-/***Estilos Contenedor Meme ***/
+/*********************************************
+            ESTILOS PARA MEME
+ ********************************************/
 
 .contenedorMeme 
 {
@@ -855,7 +874,14 @@ footer
 
 }
 
-/* Estilo Tarjetas de Personajes */
+/*********************************************
+    ESTILOS PARA CONTENEDOR PERSONAJES
+ ********************************************/
+
+.container 
+{
+    margin-top: 60px;
+}
 .card {
     width: 18rem;
     height: 30rem; 
@@ -876,7 +902,12 @@ footer
     margin-bottom: 30px; 
 }
 
-/* Estilo Acordion de Episodios*/
+
+
+/*********************************************
+    ESTILOS PARA EL FORMULARIO DE CONTACTO
+ ********************************************/
+
 .accordion {
     max-width: 900px; 
     margin: 0 auto; 
@@ -895,7 +926,10 @@ footer
     font-style: normal; 
 }
 
-/* Estilos para el formulario de contacto */
+
+/*********************************************
+    ESTILOS PARA EL FORMULARIO DE CONTACTO
+ ********************************************/
 .contact-form-container {
     position: fixed;
     top: 50%;
@@ -921,7 +955,9 @@ footer
     font-family: "Rock Salt", cursive;
 }
 
-/* Animación de botón Enviar en pagina de Contacto */
+/*********************************************
+    ANIMACION BOTON ENVIAR CONTACTO
+ ********************************************/
 
 .submit-button {
     position:relative;
@@ -965,7 +1001,9 @@ footer
     opacity: 0;
 }
 
-/* Página de Contacto, estilo footer */
+/*********************************************
+    ESTILOS PARA EL FORMULARIO DE CONTACTO
+ ********************************************/
 .redsocial-icons {
     list-style-type: none;
     margin: 0;
