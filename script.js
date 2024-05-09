@@ -53,6 +53,8 @@ function startTrivia() {
     contenedorMenu.style.display = 'none';
     contenedorMensaje.style.display = 'none';
     contenedorTrivia.style.display = 'block';
+    loginBtn.style.display = 'none';
+
     showQuestion();
 }
 
@@ -175,6 +177,7 @@ meme.addEventListener('click', function(event) {
     contenedorMenu.style.display = 'none';
     contenedorMensaje.style.display = 'none';
     contenedorMeme.style.display = 'block';
+    loginBtn.style.display = 'none';
     
 });
 
