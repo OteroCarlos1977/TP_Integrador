@@ -875,41 +875,13 @@ footer
 
 }
 
-/*********************************************
-    ESTILOS PARA CONTENEDOR PERSONAJES
- ********************************************/
-
-.container 
-{
-    margin-top: 60px;
-}
-.card {
-    width: 18rem;
-    height: 30rem; 
-    color: rgb(0, 0, 0);
-}
-.card-img-top {
-    height: 180px; 
-    object-fit: cover; 
-}
-.card-text {
-    overflow-y: auto; 
-    max-height: 200px; 
-    font-family: "Rock Salt", cursive; 
-    font-weight: 400;
-    font-style: normal; 
-}
-.row {
-    margin-bottom: 30px; 
-}
-
 
 
 /*********************************************
     ESTILOS PARA EL FORMULARIO DE CONTACTO
  ********************************************/
 
-.accordion {
+ .accordion {
     max-width: 900px; 
     margin: 0 auto; 
     background-color: rgba(0, 0, 0, 0.7);
@@ -944,7 +916,7 @@ footer
 
 .contact-form label {
     display: block;
-    margin-bottom: 10px; 
+    margin-bottom: 15px; 
 }
 
 .contact-form input {
@@ -954,9 +926,32 @@ footer
     font-family: "Rock Salt", cursive;
 }
 
+
+.contact-form .radio-container {
+    display: flex;
+    align-items: center;
+}
+
+.contact-form input[type="radio"] {
+    margin-right: 10px; 
+}
+
+.contact-form input[type="radio"] + label {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="radio"]:checked + label {
+    background-color: #eaeaea; 
+}
+
+
 /*********************************************
     ANIMACION BOTON ENVIAR CONTACTO
  ********************************************/
+
 
 .submit-button {
     position:relative;
@@ -1003,6 +998,7 @@ footer
 /*********************************************
     ESTILOS PARA EL FORMULARIO DE CONTACTO
  ********************************************/
+
 .redsocial-icons {
     list-style-type: none;
     margin: 0;
@@ -1022,4 +1018,3 @@ footer
     width: 30px; 
     height: auto; 
 }
-
