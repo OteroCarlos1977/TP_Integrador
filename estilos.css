@@ -301,7 +301,7 @@ main
     color:rgb(187, 200, 7);
     text-align: center;
     width: 50%;
-    height: 70%;
+    height: 75%;
     align-content: center;
     align-items: center;
 }
@@ -955,10 +955,6 @@ footer
         font: 20px;
         color: black ;
     }
-
-
-}
-
 
 
 /*********************************************
