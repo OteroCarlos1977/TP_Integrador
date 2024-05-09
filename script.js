@@ -162,7 +162,7 @@ loginBtn.addEventListener('click', function(event) {
     event.preventDefault();
     contenedorMenu.style.display = 'none';
     contenedorMensaje.style.display = 'none';
-    contenedorLogin.style.display = 'block';
+    contenedorLogin.style.display = 'flex';
     loginBtn.style.display = 'none';
     
 });

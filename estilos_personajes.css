@@ -124,6 +124,7 @@ footer
     margin: auto;
     padding: 10px;
     mix-blend-mode:hard-light;
+    filter: drop-shadow(10px 5px 10px rgb(240, 241, 236));
  }
 
  .itemPersonaje h2
@@ -140,11 +141,11 @@ footer
 
 
 /*********************************************
-            ESTILOS RESPONSIVOS 1200PX
+            ESTILOS RESPONSIVOS 1024PX
  ********************************************/
 
  
- @media screen and (max-width: 1200px) {
+ @media screen and (max-width: 1024px) {
     
     .bodyPersonajes
     {
@@ -174,11 +175,11 @@ footer
 }
 
 /*********************************************
-            ESTILOS RESPONSIVOS 600PX
+            ESTILOS RESPONSIVOS 768PX
  ********************************************/
 
  
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 768px) {
     
     .bodyPersonajes
     {

@@ -322,7 +322,7 @@ main
 
 .formLogin label
 {
-    font-size: 20px;
+    font-size:20px;
     font-weight: bold;
 }
 
@@ -598,15 +598,15 @@ footer
 }
 
 /*********************************************
-            ESTILOS RESPONSIVOS 900PX
+            ESTILOS RESPONSIVOS 1024PX
  ********************************************/
 
  
- @media screen and (max-width: 900px) {
+ @media screen and (max-width: 1024px) {
     
     body 
     {
-        background-image: url(Imagenes/backcel3.jpg);
+        background-image: url(Imagenes/background1.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat
@@ -693,13 +693,55 @@ footer
     align-items: center;
 }
 
+.contenedorLogin {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0,0,0,.7); 
+    box-shadow: 10px 10px 10px 0 rgb(12, 11, 11);   
+    color:rgb(187, 200, 7);
+    text-align: center;
+    width: 60%;
+    height: 70%;
+    align-content: center;
+    align-items: center;
+}
+
+.contenedorLogin h1, .contenedorLogin p
+{
+   margin:10px 0;
+}
+
+.contenedorLogin h1
+{
+    font-size: 28px;
+}
+.formLogin label
+{
+    font-size:18px;
+    font-weight: bold;
+}
+
+.formLogin input
+{   
+    margin: 8px 0;
+    width: 50%;
+    height: 35px;
+    padding: 5px;
+    font: 20px;
+    color: black ;
+}
+
 }
 
 /*********************************************
-            ESTILOS RESPONSIVOS 600PX
+            ESTILOS RESPONSIVOS 768PX
  ********************************************/
 
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 768px) {
     
     body 
     {
@@ -872,14 +914,54 @@ footer
         align-items: center;
     }
 
+    .contenedorLogin {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0,0,0,.7); 
+        box-shadow: 10px 10px 10px 0 rgb(12, 11, 11);   
+        color:rgb(187, 200, 7);
+        text-align: center;
+        width: 90%;
+        height: 70%;
+        align-content: center;
+        align-items: center;
+    }
+    
+    .contenedorLogin h1, .contenedorLogin p
+    {
+       margin:10px 0;
+    }
+    
+    .contenedorLogin h1
+    {
+        font-size: 28px;
+    }
+    .formLogin label
+    {
+        font-size:18px;
+        font-weight: bold;
+    }
+    
+    .formLogin input
+    {   
+        margin: 8px 0;
+        width: 70%;
+        height: 35px;
+        padding: 5px;
+        font: 20px;
+        color: black ;
+    }
 
-}
 
 /*********************************************
     ESTILOS PARA EL FORMULARIO DE CONTACTO
  ********************************************/
 
-.accordion {
+ .accordion {
     max-width: 900px; 
     margin: 0 auto; 
     background-color: rgba(0, 0, 0, 0.7);
@@ -945,7 +1027,6 @@ footer
     background-color: #eaeaea; 
 }
 
-/* Animación de botón Enviar en pagina de Contacto */
 
 /*********************************************
     ANIMACION BOTON ENVIAR CONTACTO
@@ -997,6 +1078,7 @@ footer
 /*********************************************
     ESTILOS PARA EL FORMULARIO DE CONTACTO
  ********************************************/
+
 .redsocial-icons {
     list-style-type: none;
     margin: 0;
@@ -1016,4 +1098,3 @@ footer
     width: 30px; 
     height: auto; 
 }
-
