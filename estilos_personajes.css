@@ -141,11 +141,11 @@ footer
 
 
 /*********************************************
-            ESTILOS RESPONSIVOS 1200PX
+            ESTILOS RESPONSIVOS 1024PX
  ********************************************/
 
  
- @media screen and (max-width: 1200px) {
+ @media screen and (max-width: 1024px) {
     
     .bodyPersonajes
     {
@@ -175,11 +175,11 @@ footer
 }
 
 /*********************************************
-            ESTILOS RESPONSIVOS 600PX
+            ESTILOS RESPONSIVOS 768PX
  ********************************************/
 
  
- @media screen and (max-width: 600px) {
+ @media screen and (max-width: 768px) {
     
     .bodyPersonajes
     {
