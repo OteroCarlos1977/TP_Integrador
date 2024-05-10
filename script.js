@@ -41,6 +41,9 @@ const newUsuario = document.getElementById('nuevoUsu');
 const meme =document.getElementById('meme');
 const regBtn = document.getElementById('regBtn');
 const inicioBtn = document.getElementById('inicioBtn');
+const galeriaContenedor = document.getElementById('contenedorGaleria');
+const deslizarContenedor = document.getElementById('deslizarContenedor');
+const galBtn = document.getElementById('galeria');
 
 // Inicio de la trivia al hacer click en la imagen de Lisa
 trivia.addEventListener('click', function(event) {
@@ -169,7 +172,7 @@ loginBtn.addEventListener('click', function(event) {
 newUsuario.addEventListener('click', function(event) {
     event.preventDefault();
     contenedorLogin.style.display = 'none';
-    contenedorRegistro.style.display = 'block';
+    contenedorRegistro.style.display = 'flex';
     
 });
 meme.addEventListener('click', function(event) {

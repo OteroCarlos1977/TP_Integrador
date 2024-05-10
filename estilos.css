@@ -56,8 +56,9 @@ header {
 
 .logoNav
 {
-    width: 120px;
-    height: 34px;
+    margin: 3px 10px;
+    width: 60px;
+    height: 30px;
 }
 
 .navbarPc {
@@ -76,6 +77,7 @@ header {
 .navbarPc ul li {
     display: inline;
     margin-right: 20px;
+    position: relative;
 }
 
 .navbarPc ul li a {
@@ -85,6 +87,29 @@ header {
     font-size: 23px;
     font-family: "Rock Salt", cursive;
     font-weight: bolder;
+    transition: .25s ease-in;
+}
+
+.navbarPc ul li::after
+{
+    content: "";
+    height: 2px;
+    width: 0%;
+    background: rgb(187, 200, 7);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+
+.navbarPc ul li:hover::after
+{
+    width: 100%;
+}
+
+.navbarPc ul li a:hover
+{
+    text-shadow: 0px 0px 20px rgb(195, 195, 190);
 }
 
 .toggle_btn a
@@ -151,8 +176,9 @@ header {
 {
     text-decoration: none;
     
-    
 }
+
+
 
 /*********************************************
             ESTILOS PARA MAIN
@@ -185,8 +211,8 @@ main
 
 .contenedorMenu img
 {
-    width: 80px;
-    height: 60px;
+    width: 60px;
+    height: 40px;
     border-radius: 50%;
     filter: drop-shadow(3px 2px 5px rgb(187, 200, 7));
 }
@@ -197,9 +223,9 @@ main
 .contenedorMensaje
 {
     display: block;
-    margin: 40px 70px; 
+    margin: 40px 60px; 
     color: rgb(187, 200, 7);
-    font-size: clamp(10px,  2vw, 18px);
+    font-size: 16px;
     width: 80vw;
     height: 70vh;
     background: rgba(0, 0, 0, 0.8);
@@ -286,6 +312,11 @@ main
 }
 
 /*********************************************
+            ESTILOS PARA GALERIA
+ ********************************************/
+
+
+/*********************************************
             ESTILOS PARA LOGIN
  ********************************************/
 
@@ -308,7 +339,7 @@ main
 
 .contenedorLogin h1, .contenedorLogin p
 {
-   margin:20px 0;
+   margin:10px 0;
 }
 
 .formLogin
@@ -375,7 +406,7 @@ main
 
 .botones h4
 {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 
@@ -395,7 +426,7 @@ main
     box-shadow: 10px 10px 10px 0 rgb(12, 11, 11);   
     color:rgb(187, 200, 7);
     text-align: center;
-    width: 50%;
+    width: 70%;
     height: 75%;
     align-content: center;
     align-items: center;
@@ -403,7 +434,7 @@ main
 
 .contenedorRegistro h1
 {
-   margin:20px 0;
+   margin:10px 0;
 }
 
 .formRegistro
@@ -429,7 +460,7 @@ main
 
 .formRegistro input
 {
-    height: 30px;
+    height: 27px;
     padding: 5px;
     font: 24px;
     color: black ;
@@ -437,6 +468,7 @@ main
 .formRegistro h3
 {
     margin: 10px 0;
+
 }
 
 .seleccionPersonaje, .email
@@ -623,6 +655,12 @@ footer
         display: none;
     }
 
+    .contenedorMenu 
+    {
+        font-size: 13px;
+        width: 90%;
+        margin: 40px 30px;
+    }
     .contenedorLog a
     {
     
@@ -650,19 +688,20 @@ footer
     }
 
     
-.gridImagenes img {
+    .gridImagenes img 
+    {
     width: 100%;
     height: 100%;
     cursor: pointer;
     transition: transform 0.3s, z-index 0.3s;
-}
+    }
 
-.gridImagenes img:hover {
+    .gridImagenes img:hover {
     transform: scale(1.5);
     z-index: 99;
     position: relative;
     animation: mover-sombra 4s infinite linear alternate;
-}
+    }
 
 @keyframes mover-sombra {
     0% {
@@ -956,7 +995,84 @@ footer
         color: black ;
     }
 
+    .contenedorRegistro {
+    
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top:49%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(0,0,0,.7); 
+        box-shadow: 10px 10px 10px 0 rgb(12, 11, 11);   
+        color:rgb(187, 200, 7);
+        text-align: center;
+        width: 85%;
+        height: 82%;
+        justify-content: center;
+        align-items: center;
+        align-content: start;
+        
+    }
 
+    .contenedorRegistro h1
+    {
+        margin:10px 0;
+        font-size: 24px;
+    }
+    
+    .contenedorInput input 
+    {
+        height: 24px;
+        font-size: 2opx;
+    }
+
+    .contenedorInput label
+    {
+        font-size: 16px;
+    }
+
+    .seleccionPersonaje
+    {
+        display: block;
+        text-align: center;
+               
+    }
+    .seleccionPersonaje h5 {
+        width: 100%;
+        text-align: center;
+        
+    }
+
+     
+    .seleccionPersonaje .contenedorInput
+    {
+        display: inline;
+        margin-right: 2px;
+    }
+
+    .seleccionPersonaje .contenedorInput label
+    {
+        font-size: 10px;
+    }
+
+    footer
+    {
+    position: absolute;
+    width: 100%;
+    height: 6%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    padding: 5px 0;
+    bottom: 0;
+    }
+    .copy
+    {
+        font-size: 8px;
+    }
+
+}
 /*********************************************
     ESTILOS PARA EL FORMULARIO DE CONTACTO
  ********************************************/
