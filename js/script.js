@@ -22,6 +22,7 @@ const questions = [
 
 // Elementos HTML
 const header = document.getElementById('header')
+const footer = document.getElementById('footer')
 const trivia = document.getElementById('trivia');
 const questionElement = document.getElementById('question');
 const trueBtn = document.getElementById('trueBtn');
@@ -43,16 +44,12 @@ const meme =document.getElementById('meme');
 const regBtn = document.getElementById('regBtn');
 const inicioBtn = document.getElementById('inicioBtn');
 
-//Funcion audio
-function playAudio() {
-    var audio = document.getElementById('miAudio');
-    audio.play();
-}
+
 
 // Inicio de la trivia al hacer click en la imagen de Lisa
 trivia.addEventListener('click', function(event) {
     event.preventDefault();
-    
+    document.body.style.backgroundImage = 'url("Imagenes/background3.jpeg")';
     startTrivia();
 });
 
@@ -174,17 +171,15 @@ salirBtn.addEventListener('click', () => {
     mostrarElementos([contenedorMenu, contenedorMensaje]);
     ocultarElementos([contenedorTrivia]);
     header.style.display = 'flex'
+
+    document.body.style.backgroundImage = 'url("Imagenes/simpsonsback.jpg")';
 });
 
-closeBtn.addEventListener('click', () => {
-    mostrarElementos([contenedorMenu, contenedorMensaje]);
-    ocultarElementos([contenedorMeme]);
-    header.style.display ='flex';
-});
+
 
 loginBtn.addEventListener('click', function(event) {
     event.preventDefault();
-    ocultarElementos([contenedorMenu, contenedorMensaje]);
+    ocultarElementos([contenedorMenu, contenedorMensaje, footer]);
     contenedorLogin.style.display = 'flex';
     loginBtn.style.display = 'none';
 });
@@ -199,7 +194,16 @@ meme.addEventListener('click', function(event) {
     event.preventDefault();
     ocultarElementos([contenedorMenu, contenedorMensaje, header]);
     mostrarElementos([contenedorMeme]);
+    document.body.style.backgroundImage = 'url("Imagenes/sillon.jpg")';
     
+});
+
+closeBtn.addEventListener('click', () => {
+    mostrarElementos([contenedorMenu, contenedorMensaje]);
+    ocultarElementos([contenedorMeme]);
+    header.style.display ='flex';
+
+    document.body.style.backgroundImage = 'url("Imagenes/simpsonsback.jpg")';
 });
 
 regBtn.addEventListener('click', function(event) {
@@ -207,6 +211,7 @@ regBtn.addEventListener('click', function(event) {
     ocultarElementos([contenedorLogin, contenedorRegistro]);
     mostrarElementos([contenedorMenu, contenedorMensaje]);
 });
+
 
 inicioBtn.addEventListener('click', function(event) {
     event.preventDefault();
@@ -216,6 +221,32 @@ inicioBtn.addEventListener('click', function(event) {
 
 
 
+//Funcionalidad nosotros
+const contenedorNosotros = document.getElementById('contenedorNosotros');
+const nosotros = document.getElementById('nosotros');
+
+nosotros.addEventListener('click', function (event) {
+    event.preventDefault();
+    console.log("la funcion queire comenzar");
+    contenedorNosotros.style.display = 'block';
+    ocultarElementos([contenedorMenu, contenedorMensaje, header]);
+});
+
+
+const panels = document.querySelectorAll('.panel')
+
+panels.forEach(panel => {
+    panel.addEventListener('click', () => {
+        removeActiveClasses()
+        panel.classList.add('active')
+    })
+})
+
+function removeActiveClasses() {
+    panels.forEach(panel => {
+        panel.classList.remove('active')
+    })
+}
 
 
 

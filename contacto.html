@@ -6,7 +6,8 @@
     <title>Contacto</title>
     <link rel="icon" type="image/png" href="Imagenes/cuadro.png">
     <link rel="stylesheet" href="css/contacto.css">
-    <script src="login.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 <body>
     <header>
@@ -48,17 +49,7 @@
 
                         <label for="email">Correo Electrónico:</label>
                         <input type="email" id="email" name="email" required>
-
-                        <label for="personaje">Selecciona tu personaje Favorito:</label>
-                        <select id="personaje" name="personaje" required>
-                            <option value="">Seleccione un personaje</option>
-                            <option value="homero">Homero</option>
-                            <option value="marge">Marge</option>
-                            <option value="bart">Bart</option>
-                            <option value="lisa">Lisa</option>
-                            <option value="maggie">Maggie</option>
-                        </select>
-
+                        
                         <label for="imagen" style="margin-top: 15px;">Agrega una foto de tu avatar:</label>
                         <input type="file" id="imagen" name="imagen" accept="image/*" required>
 
@@ -69,6 +60,8 @@
                             <input type="radio" id="no" name="fanatico" value="no" required>
                             <label for="no">Meh...</label>
                         </div>
+                        <label for="comentario">Dejanos tu comentario</label>
+                        <textarea name="comentario" id="comentario"></textarea>
 
                         <button type="submit" class="submit-button">
                             <span class="button-text">Enviar</span>
@@ -79,12 +72,8 @@
             </div>
         </article>
     </main>
-    <footer>
-        <ul class="redsocial-icons">
-            <li><a href="https://www.facebook.com/TheSimpsons/"><img src="Imagenes/facebook3.jpeg" alt="Facebook"></a></li>
-            <li><a href="https://twitter.com/TheSimpsons"><img src="Imagenes/twitter1.jpeg" alt="Twitter"></a></li>
-        </ul>
-    </footer>
+    
+    <script src="login.js"></script>
 </body>
 </html>
 

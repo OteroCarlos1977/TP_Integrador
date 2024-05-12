@@ -123,6 +123,11 @@ header {
    
 }
 
+.logout
+{
+    display:none;
+}
+
 .contenedorLog a
 {
     color: rgb(187, 200, 7);
@@ -312,11 +317,6 @@ header {
 }
 
 /*********************************************
-            ESTILOS PARA GALERIA
- ********************************************/
-
-
-/*********************************************
             ESTILOS PARA LOGIN
  ********************************************/
 
@@ -324,7 +324,7 @@ header {
     display: none;
     flex-direction: column;
     position: absolute;
-    top: 48%;
+    top:50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgba(0,0,0,.7); 
@@ -332,7 +332,7 @@ header {
     color:rgb(187, 200, 7);
     text-align: center;
     width: 50%;
-    height: 75%;
+    height: 85%;
     align-content: center;
     align-items: center;
 }
@@ -611,11 +611,14 @@ input[type="checkbox"], input[type="radio"]
  .contenedorGaleria
  {
      position: absolute;
-     top: 20%;
-     left: 20%;
-     width:60vw;
-     height: 60vh;
+     top: 10%;
+     left: 10%;
+     width:80vw;
+     height: 70vh;
      display: none;
+     box-shadow: 40px 40px 24px 21px rgba(0,0,0,0.79);
+    -webkit-box-shadow: 40px 40px 24px 21px rgba(0,0,0,0.79);
+    -moz-box-shadow: 40px 40px 24px 21px rgba(0,0,0,0.79);
  }
  
  
@@ -858,6 +861,83 @@ input[type="checkbox"], input[type="radio"]
      }
  }
 
+ /*********************************************
+            ESTILOS NOSOTROS
+ ********************************************/
+
+ .contenedorNosotros
+ {
+    display:none;
+    text-align: center;
+    align-items: center;
+    
+ }
+
+ .contenedorNosotros h1
+ {
+    color: rgb(187, 200, 7);
+    position: relative;
+    
+ }
+
+ .container {
+    display: flex;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 40vw;
+    
+  }
+
+
+
+  .panel {
+    
+    height: 60vh;
+    color: rgb(187, 200, 7);
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: all 700ms ease-in;
+  }
+
+  img
+  {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50px;
+    
+  }
+   
+  
+  .panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    padding: 5px;
+  }
+  
+  .panel.active {
+    flex: 5;
+  }
+  
+  .panel.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+  }
+
+  
+
+
+
+
 /*********************************************
             ESTILOS PARA FOOTER
  ********************************************/
@@ -892,7 +972,7 @@ footer
     
     body 
     {
-        background-image: url(Imagenes/background1.jpg);
+        background-image: url(../Imagenes/background1.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat
@@ -1010,8 +1090,9 @@ footer
 
 .contenedorLogin h1
 {
-    font-size: 28px;
+    font-size: 22px;
 }
+
 .formLogin label
 {
     font-size:18px;
@@ -1043,7 +1124,7 @@ footer
     
     body 
     {
-        background-image: url(Imagenes/backcel2.jpg);
+        background-image: url(../Imagenes/backcel2.jpg);
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat
@@ -1228,6 +1309,11 @@ footer
         align-content: center;
         align-items: center;
     }
+
+    .contenedorLogin h1
+    {
+        font-size: 16px;
+    }
     
     .contenedorLogin h1, .contenedorLogin p
     {
@@ -1331,145 +1417,15 @@ footer
         font-size: 8px;
     }
 
-}
-/*********************************************
-    ESTILOS PARA EL FORMULARIO DE CONTACTO
- ********************************************/
+    .container {
+        width: 100vw;
+      }
+    
+      .panel:nth-of-type(4),
+      .panel:nth-of-type(5) {
+        display: none;
+      }
 
- .accordion {
-    max-width: 900px; 
-    margin: 0 auto; 
-    background-color: rgba(0, 0, 0, 0.7);
-}
 
-.accordion-button {
-    width: 100%;
-    background-color: transparent !important;
 }
 
-.accordion-body {
-    width: 100%;
-    font-family: "Rock Salt", cursive; 
-    color: rgb(187, 200, 7);
-    font-weight: 400; 
-    font-style: normal; 
-}
-
-
-.contact-form-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px; 
-    padding: 20px; 
-    background-color: #f9f9f9; 
-    border-radius: 10px; 
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
-    font-family: "Rock Salt", cursive; 
-}
-
-.contact-form label {
-    display: block;
-    margin-bottom: 15px; 
-}
-
-.contact-form input {
-    width: 100%; 
-    padding: 8px; 
-    margin-bottom: 15px; 
-    font-family: "Rock Salt", cursive;
-}
-
-
-.contact-form .radio-container {
-    display: flex;
-    align-items: center;
-}
-
-.contact-form input[type="radio"] {
-    margin-right: 10px; 
-}
-
-.contact-form input[type="radio"] + label {
-    cursor: pointer;
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-.contact-form input[type="radio"]:checked + label {
-    background-color: #eaeaea; 
-}
-
-
-/*********************************************
-    ANIMACION BOTON ENVIAR CONTACTO
- ********************************************/
-
-
-.submit-button {
-    position:relative;
-    width: calc(100%);
-    padding: 15px;  
-    background-color: #f2ff00; 
-    border: none; 
-    cursor: pointer; 
-    font-family: "Rock Salt", cursive; 
-}
-
-.submit-button span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: black;
-    background-color: transparent;
-    border: 2px solid black;
-    transition: opacity 0.3s;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box; 
-}
-
-.submit-button:hover {
-    background-color: #b37d00; 
-} 
-
-.submit-button .hover-text {
-    opacity: 0;
-}
-
-.submit-button:hover .hover-text {
-    opacity: 1;
-}
-
-.submit-button:hover .button-text {
-    opacity: 0;
-}
-
-/*********************************************
-    ESTILOS PARA EL FORMULARIO DE CONTACTO
- ********************************************/
-
-.redsocial-icons {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.redsocial-icons li {
-    display: inline;
-    margin-right: 10px; 
-}
-
-.redsocial-icons li:last-child {
-    margin-right: 0; 
-}
-
-.redsocial-icons img {
-    width: 30px; 
-    height: auto; 
-}

@@ -4,7 +4,6 @@ const contenedorGaleria = document.getElementById('contenedorGaleria');
 const contenedorMenu = document.getElementById('contenedorMenu');
 const contenedorMensaje = document.getElementById('contenedorMensaje');
 const galeria =document.getElementById('galeria');
-const loginBtn = document.getElementById('loginBtn');
 const salirGal = document.getElementById('salirGal');
 const nextDom = document.getElementById('next');
 const prevDom = document.getElementById('prev');
@@ -12,7 +11,7 @@ const carouselDom = document.querySelector('.carousel');
 const SliderDom = carouselDom.querySelector('.carousel .list');
 const thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
 const thumbnailItemsDom = thumbnailBorderDom.querySelectorAll('.item');
-const timeDom = document.querySelector('.carousel .time');
+
 
 thumbnailBorderDom.appendChild(thumbnailItemsDom[0]);
 let timeRunning = 1000;
@@ -57,11 +56,12 @@ function showSlider(type){
 
 galeria.addEventListener('click', (event) => {
     event.preventDefault();
-    
     contenedorGaleria.style.display = 'block';
     contenedorMenu.style.display = 'none';
     contenedorMensaje.style.display = 'none';
     header.style.display = 'none';
+
+    document.body.style.backgroundImage = 'url("Imagenes/galeria.png")';
 });
 
 salirGal.addEventListener('click', (event) => {
@@ -71,6 +71,8 @@ salirGal.addEventListener('click', (event) => {
     contenedorMenu.style.display = 'block';
     contenedorMensaje.style.display = 'block';
     header.style.display = 'flex';
+
+    document.body.style.backgroundImage = 'url("Imagenes/simpsonsback.jpg")';
 });
 
 });
