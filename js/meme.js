@@ -1,0 +1,136 @@
+document.addEventListener('DOMContentLoaded', function() {
+    
+let memes= [
+    {
+        imagen:'Imagenes/memes/meme1.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme2.jpeg'
+    },
+    {
+        imagen:'Imagenes/memes/meme3.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme4.jpeg'
+    },
+    {
+        imagen:'Imagenes/memes/meme5.jpeg'
+    },
+    {
+        imagen:'Imagenes/memes/meme6.jpeg'
+    },
+    {
+        imagen:'Imagenes/memes/meme7.jpeg'
+    },
+    {
+        imagen:'Imagenes/memes/meme8.jpeg'
+    },
+    {
+        imagen:'Imagenes/memes/meme9.jpeg'
+    },
+    {
+        imagen:'Imagenes/memes/meme10.jpeg'
+    },
+    {
+        imagen:'Imagenes/memes/meme11.jpeg'
+    },
+    {
+        imagen:'Imagenes/memes/meme12.jpeg'
+    },
+    {
+        imagen:'Imagenes/memes/meme13.jpeg'
+    },
+    {
+        imagen:'Imagenes/memes/meme14.jpeg'
+    },
+    {
+        imagen:'Imagenes/memes/meme15.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme16.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme17.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme18.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme19.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme20.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme21.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme22.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme23.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme24.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme25.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme26.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme27.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme28.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme29.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme30.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme31.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme32.jpg'
+    },
+        {
+        imagen:'Imagenes/memes/meme33.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme34.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme35.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme36.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme37.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme38.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme39.jpg'
+    },
+    {
+        imagen:'Imagenes/memes/meme40.jpg'
+    }
+];
+    let gridImagenes = document.querySelector('.gridImagenes');
+
+    for (let i = 0; i < memes.length; i++) {
+        let div = document.createElement('div');
+        div.classList.add('itemImg');
+        let img = document.createElement('img');
+        img.src = memes[i].imagen;
+        div.appendChild(img);
+        gridImagenes.appendChild(div);
+    };
+    
+});

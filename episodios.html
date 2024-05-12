@@ -4,13 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Episodios</title>
-    <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="icon" type="image/png" href="Imagenes/cuadro.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/episodios.css">
+    
+ 
 </head>
 <body>
   <header>
     <div class="contenedorImagen">
-        <img class="logoNav"  src="Imagenes/simpsons3.png" alt="icono">
+        <img class="logoNav"  src="Imagenes/sillon.png" alt="icono">
     </div>
     <nav class="navbarPc">
         <ul>
@@ -37,365 +42,81 @@
         </div>
     
 </header>
-    <main>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                  Temporada 1
-                </button>
-              </h2>
-              <div id="flush-collapseOne" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                <div class="accordion-body">Esta temporada consta de 13 episodios. Se emitió por primera vez el 17 de diciembre de 1989 con el episodio "Simpsons Roasting on an Open Fire" y finalizó el 13 de mayo de 1990 con el episodio "Some Enchanted Evening". Esta temporada estableció las bases para el universo de la serie y presentó a los personajes principales y la dinámica familiar de los Simpson. </div>
-              </div>
+    
+      <div class="contenedorEpisodios">
+      <div class="accordion">
+        
+        <div class="accordion-item">
+          <div class="accordion-header">Temporada 1</div>
+          <div class="accordion-content">
+            <p>Esta temporada consta de 13 episodios. Se emitió por primera vez el 17 de diciembre de 1989 con el episodio "Simpsons Roasting on an Open Fire" y finalizó el 13 de mayo de 1990 con el episodio "Some Enchanted Evening". Esta temporada estableció las bases para el universo de la serie y presentó a los personajes principales y la dinámica familiar de los Simpson.</p>
+            
+            <div class="episode-links">
+              <a href="video/los simpson_1_1.mp4" onclick="changeVideo('DigctFieJH0')"  target="video-frame">Episodio 1</a>
+              <a href="video/los simpson_1_2.mp4" onclick="changeVideo('KxQwGtjTc38')"  target="video-frame">Episodio 2</a>
+              <a href="video/los simpson_1_3.mp4" onclick="changeVideo('YVFOSvdV7FE')"  target="video-frame">Episodio 3</a>
+              <a href="video/los simpson_1_4.mp4" onclick="changeVideo('QXG4JYdQBoQ')"  target="video-frame">Episodio 4</a>
             </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                  Temporada 2
-                </button>
-              </h2>
-              <div id="flush-collapseTwo" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                <div class="accordion-body"> Esta temporada consta de 22 episodios. Se emitió por primera vez el 11 de octubre de 1990 con el episodio "Bart Gets an F" y finalizó el 11 de julio de 1991 con el episodio "Blood Feud". Esta temporada continuó desarrollando el universo de la serie, presentando nuevos personajes y expandiendo las historias de los personajes principales.</div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                  Temporada 3
-                </button>
-              </h2>
-              <div id="flush-collapseThree" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                <div class="accordion-body">Esta temporada consta de 24 episodios. Se emitió por primera vez el 19 de septiembre de 1991 con el episodio "Stark Raving Dad" y finalizó el 7 de agosto de 1992 con el episodio "Brother, Can You Spare Two Dimes?". Esta temporada fue muy aclamada y se considera una de las mejores de la serie, presentando episodios memorables y continuando con el desarrollo de los personajes y las historias.</div>
-              </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 4
-                  </button>
-                </h2>
-                <div id="flush-collapseFour" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 22 episodios. Se emitió por primera vez el 24 de septiembre de 1992 con el episodio "Kamp Krusty" y finalizó el 13 de mayo de 1993 con el episodio "Krusty Gets Kancelled". Esta temporada es conocida por su humor ingenioso, personajes memorables y episodios icónicos que continúan con el legado de la serie.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 5
-                  </button>
-                </h2>
-                <div id="flush-collapseFive" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 22 episodios. Se emitió por primera vez el 30 de septiembre de 1993 con el episodio "Homer's Barbershop Quartet" y finalizó el 19 de mayo de 1994 con el episodio "Secrets of a Successful Marriage". Esta temporada es altamente elogiada por la crítica y los fanáticos, y es considerada por muchos como uno de los puntos culminantes de la serie debido a su ingenioso humor, historias creativas y desarrollo de personajes.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 6
-                  </button>
-                </h2>
-                <div id="flush-collapseSix" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 25 episodios. Se emitió por primera vez el 4 de septiembre de 1994 con el episodio "Bart of Darkness" y finalizó el 21 de mayo de 1995 con el episodio "Who Shot Mr. Burns? (Part Two)". Esta temporada continúa con el legado de la serie, presentando episodios llenos de humor inteligente, sátira social y desarrollos significativos en la vida de los personajes principales.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 7
-                  </button>
-                </h2>
-                <div id="flush-collapseSeven" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 25 episodios y se estrenó el 17 de septiembre de 1995 con el episodio "Who Shot Mr. Burns? (Part Two)". Esta temporada se destacó por su humor ingenioso y mordaz, así como por una serie de episodios clásicos que han dejado una marca indeleble en la cultura popular. Concluyó el 19 de mayo de 1996 con el episodio "Summer of 4 Ft. 2", consolidando su lugar como una de las temporadas más queridas y recordadas de la serie.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 8
-                  </button>
-                </h2>
-                <div id="flush-collapseEight" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 25 episodios y se estrenó el 27 de octubre de 1996 con el episodio "Treehouse of Horror VII". Esta temporada continuó con el legado de la serie, ofreciendo una mezcla de ingenio, humor satírico y momentos memorables. Concluyó el 18 de mayo de 1997 con el episodio "The Secret War of Lisa Simpson".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 9
-                  </button>
-                </h2>
-                <div id="flush-collapseNine" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada está compuesta por 25 episodios y comenzó el 21 de septiembre de 1997 con el episodio "The City of New York vs. Homer Simpson". Esta temporada presentó una variedad de historias creativas y episodios destacados. Terminó el 17 de mayo de 1998 con el episodio "Natural Born Kissers".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 10
-                  </button>
-                </h2>
-                <div id="flush-collapseTen" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 23 episodios y se estrenó el 23 de agosto de 1998 con el episodio "Lard of the Dance". Esta temporada continuó con el éxito de la serie, ofreciendo humor inteligente y momentos inolvidables. Concluyó el 16 de mayo de 1999 con el episodio "Thirty Minutes Over Tokyo".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 11
-                  </button>
-                </h2>
-                <div id="flush-collapseEleven" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 22 episodios y comenzó el 26 de septiembre de 1999 con el episodio "Beyond Blunderdome". Esta temporada continuó con la tradición de ofrecer una combinación de humor, sátira y episodios icónicos. Finalizó el 21 de mayo de 2000 con el episodio "Behind the Laughter".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 12
-                  </button>
-                </h2>
-                <div id="flush-collapseTwelve" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 21 episodios y se estrenó el 1 de noviembre de 2000 con el episodio "Treehouse of Horror XI". Esta temporada continuó con el legado de la serie, presentando una variedad de historias creativas y momentos memorables. Concluyó el 20 de mayo de 2001 con el episodio "Simpsons Tall Tales".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseThirteen" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 13
-                  </button>
-                </h2>
-                <div id="flush-collapseThirteen" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada está compuesta por 22 episodios y comenzó el 6 de noviembre de 2001 con el episodio "Treehouse of Horror XII". Esta temporada presentó una mezcla de humor inteligente, sátira social y episodios destacados. Terminó el 22 de mayo de 2002 con el episodio "Poppa's Got a Brand New Badge".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseFourteen" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 14
-                  </button>
-                </h2>
-                <div id="flush-collapseFourteen" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 22 episodios y se estrenó el 3 de noviembre de 2002 con el episodio "Treehouse of Horror XIII". Esta temporada continuó con el éxito de la serie, ofreciendo una combinación de humor, sátira y momentos inolvidables. Concluyó el 18 de mayo de 2003 con el episodio "Moe Baby Blues".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseFifteen" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 15
-                  </button>
-                </h2>
-                <div id="flush-collapseFifteen" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 22 episodios y comenzó el 2 de noviembre de 2003 con el episodio "Treehouse of Horror XIV". Esta temporada continuó con la tradición de ofrecer una combinación de humor, sátira y episodios icónicos. Finalizó el 23 de mayo de 2004 con el episodio "Fraudcast News".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseSixteen" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 16
-                  </button>
-                </h2>
-                <div id="flush-collapseSixteen" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 21 episodios y se estrenó el 7 de noviembre de 2004 con el episodio "Treehouse of Horror XV". Esta temporada continuó con el legado de la serie, presentando una variedad de historias creativas y momentos memorables. Concluyó el 15 de mayo de 2005 con el episodio "The Father, the Son, and the Holy Guest Star".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseSeventeen" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 17
-                  </button>
-                </h2>
-                <div id="flush-collapseSeventeen" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada está compuesta por 22 episodios y comenzó el 11 de septiembre de 2005 con el episodio "The Bonfire of the Manatees". Esta temporada presentó una mezcla de humor inteligente, sátira social y episodios destacados. Terminó el 21 de mayo de 2006 con el episodio "Marge and Homer Turn a Couple Play".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseEighteen" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 18
-                  </button>
-                </h2>
-                <div id="flush-collapseEighteen" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 22 episodios y se estrenó el 10 de septiembre de 2006 con el episodio "The Mook, the Chef, the Wife and Her Homer". Esta temporada continuó con el éxito de la serie, ofreciendo una combinación de humor, sátira y momentos inolvidables. Concluyó el 20 de mayo de 2007 con el episodio "You Kent Always Say What You Want".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseNineteen" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 19
-                  </button>
-                </h2>
-                <div id="flush-collapseNineteen" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 20 episodios y comenzó el 23 de septiembre de 2007 con el episodio "He Loves to Fly and He D'ohs". Esta temporada continuó con la tradición de ofrecer una combinación de humor, sátira y episodios icónicos. Finalizó el 18 de mayo de 2008 con el episodio "All About Lisa".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseTwenty" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 20
-                  </button>
-                </h2>
-                <div id="flush-collapseTwenty" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 21 episodios y se estrenó el 28 de septiembre de 2008 con el episodio "Sex, Pies and Idiot Scrapes". Esta temporada continuó con el legado de la serie, presentando una variedad de historias creativas y momentos memorables. Concluyó el 17 de mayo de 2009 con el episodio "Coming to Homerica".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseTwentyOne" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 21
-                  </button>
-                </h2>
-                <div id="flush-collapseTwentyOne" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada está compuesta por 23 episodios y comenzó el 27 de septiembre de 2009 con el episodio "Homer the Whopper". Esta temporada presentó una mezcla de humor inteligente, sátira social y episodios destacados. Terminó el 23 de mayo de 2010 con el episodio "Judge Me Tender".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseTwentyTwo" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 22
-                  </button>
-                </h2>
-                <div id="flush-collapseTwentyTwo" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 22 episodios y se estrenó el 26 de septiembre de 2010 con el episodio "Elementary School Musical". Esta temporada continuó con el éxito de la serie, ofreciendo una combinación de humor, sátira y momentos inolvidables. Concluyó el 22 de mayo de 2011 con el episodio "The Ned-Liest Catch".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseTwentyThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 23
-                  </button>
-                </h2>
-                <div id="flush-collapseTwentyThree" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 22 episodios y comenzó el 25 de septiembre de 2011 con el episodio "The Falcon and the D'ohman". Esta temporada continuó con la tradición de ofrecer una combinación de humor, sátira y episodios icónicos. Finalizó el 20 de mayo de 2012 con el episodio "Lisa Goes Gaga".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseTwentyFour" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 24
-                  </button>
-                </h2>
-                <div id="flush-collapseTwentyFour" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 22 episodios y se estrenó el 30 de septiembre de 2012 con el episodio "Moonshine River". Esta temporada continuó con el legado de la serie, presentando una variedad de historias creativas y momentos memorables. Concluyó el 19 de mayo de 2013 con el episodio "Dangers on a Train".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseTwentyFive" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 25
-                  </button>
-                </h2>
-                <div id="flush-collapseTwentyFive" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporadaestá compuesta por 22 episodios y comenzó el 29 de septiembre de 2013 con el episodio "Homerland". Esta temporada presentó una mezcla de humor inteligente, sátira social y episodios destacados. Terminó el 18 de mayo de 2014 con el episodio "The Yellow Badge of Cowardge". </div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseTwentySix" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 26
-                  </button>
-                </h2>
-                <div id="flush-collapseTwentySix" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 22 episodios y se estrenó el 28 de septiembre de 2014 con el episodio "Clown in the Dumps". Esta temporada continuó con el éxito de la serie, ofreciendo una combinación de humor, sátira y momentos inolvidables. Concluyó el 17 de mayo de 2015 con el episodio "Mathlete's Feat".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseTwentySeven" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 27
-                  </button>
-                </h2>
-                <div id="flush-collapseTwentySeven" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 22 episodios y comenzó el 27 de septiembre de 2015 con el episodio "Every Man's Dream". Esta temporada continuó con la tradición de ofrecer una combinación de humor, sátira y episodios icónicos. Finalizó el 22 de mayo de 2016 con el episodio "Orange is the New Yellow".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseTwentyEight" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 28
-                  </button>
-                </h2>
-                <div id="flush-collapseTwentyEight" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 22 episodios y se estrenó el 25 de septiembre de 2016 con el episodio "Monty Burns' Fleeing Circus". Esta temporada continuó con el legado de la serie, presentando una variedad de historias creativas y momentos memorables. Concluyó el 21 de mayo de 2017 con el episodio "Dogtown".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseTwentyNine" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 29
-                  </button>
-                </h2>
-                <div id="flush-collapseTwentyNine" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada está compuesta por 21 episodios y comenzó el 1 de octubre de 2017 con el episodio "The Serfsons". Esta temporada presentó una mezcla de humor inteligente, sátira social y episodios destacados. Terminó el 20 de mayo de 2018 con el episodio "Flanders' Ladder".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseThirty" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 30
-                  </button>
-                </h2>
-                <div id="flush-collapseThirty" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 23 episodios y se estrenó el 30 de septiembre de 2018 con el episodio "Bart's Not Dead". Esta temporada continuó con el éxito de la serie, ofreciendo una combinación de humor, sátira y momentos inolvidables. Concluyó el 12 de mayo de 2019 con el episodio "Crystal Blue-Haired Persuasion".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseThirtyOne" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 31
-                  </button>
-                </h2>
-                <div id="flush-collapseThirtyOne" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 22 episodios y comenzó el 29 de septiembre de 2019 con el episodio "The Winter of Our Monetized Content". Esta temporada continuó con la tradición de ofrecer una combinación de humor, sátira y episodios icónicos. Finalizó el 17 de mayo de 2020 con el episodio "The Way of the Dog".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseThirtyTwo" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 32
-                  </button>
-                </h2>
-                <div id="flush-collapseThirtyTwo" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 22 episodios y se estrenó el 27 de septiembre de 2020 con el episodio "Undercover Burns". Esta temporada continuó con el legado de la serie, presentando una variedad de historias creativas y momentos memorables. Concluyó el 23 de mayo de 2021 con el episodio "The Last Barfighter".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseThirtyThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 33
-                  </button>
-                </h2>
-                <div id="flush-collapseThirtyThree" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada está compuesta por 22 episodios y comenzó el 26 de septiembre de 2021 con el episodio "The Star of the Backstage". Esta temporada presentó una mezcla de humor inteligente, sátira social y episodios destacados. Terminó el 22 de mayo de 2022 con el episodio "Portrait of a Lackey on Fire".</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseThirtyFour" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 34
-                  </button>
-                </h2>
-                <div id="flush-collapseThirtyFour" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada consta de 22 episodios y se estrenó el 25 de septiembre de 2022 con el episodio "A Serious Flanders (Part 1)". Esta temporada continuó con el éxito de la serie, ofreciendo una combinación de humor, sátira y momentos inolvidables.</div>
-                </div>
-            </div>
-            <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-toggle="collapse" data-target="#flush-collapseThirtyFive" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Temporada 35
-                  </button>
-                </h2>
-                <div id="flush-collapseThirtyFive" class="accordion-collapse collapse" data-parent="#accordionFlushExample">
-                  <div class="accordion-body">Esta temporada está compuesta por 22 episodios y comenzó el 1 de octubre de 2022 con el episodio "A Serious Flanders (Part 2)". Esta temporada sigue con la tradición de ofrecer una combinación de humor, sátira y episodios icónicos.</div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Temporada 2</div>
+          <div class="accordion-content">
+            <p>Esta temporada consta de 22 episodios. Se emitió por primera vez el 11 de octubre de 1990 con el episodio "Bart Gets an F" y finalizó el 11 de julio de 1991 con el episodio "Blood Feud". Esta temporada continuó desarrollando el universo de la serie, presentando nuevos personajes y expandiendo las historias de los personajes principales.</p>
+            
+            <div class="episode-links">
+              <a href="video/los simpson_2_1.mp4" onclick="changeVideo('DigctFieJH0')"  target="video-frame">Episodio 1</a>
+              <a href="video/los simpson_2_2.mp4" onclick="changeVideo('KxQwGtjTc38')"  target="video-frame">Episodio 2</a>
+              <a href="video/los simpson_2_3.mp4" onclick="changeVideo('YVFOSvdV7FE')"  target="video-frame">Episodio 3</a>
+              <a href="video/los simpson_2_4.mp4" onclick="changeVideo('QXG4JYdQBoQ')"  target="video-frame">Episodio 4</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Temporada 3</div>
+          <div class="accordion-content">
+            <p>Esta temporada consta de 24 episodios. Se emitió por primera vez el 19 de septiembre de 1991 con el episodio "Stark Raving Dad" y finalizó el 7 de agosto de 1992 con el episodio "Brother, Can You Spare Two Dimes?". Esta temporada fue muy aclamada y se considera una de las mejores de la serie, presentando episodios memorables y continuando con el desarrollo de los personajes y las historias.</p>
+            
+            <div class="episode-links">
+              <a href="video/los simpson_3_1.mp4" onclick="changeVideo('DigctFieJH0')"  target="video-frame">Episodio 1</a>
+              <a href="video/los simpson_3_2.mp4" onclick="changeVideo('KxQwGtjTc38')"  target="video-frame">Episodio 2</a>
+              <a href="video/los simpson_3_3.mp4" onclick="changeVideo('YVFOSvdV7FE')"  target="video-frame">Episodio 3</a>
+              <a href="video/los simpson_3_4.mp4" onclick="changeVideo('QXG4JYdQBoQ')"  target="video-frame">Episodio 4</a>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header">Temporada 4</div>
+          <div class="accordion-content">
+            <p>Esta temporada consta de 22 episodios. Se emitió por primera vez el 24 de septiembre de 1992 con el episodio "Kamp Krusty" y finalizó el 13 de mayo de 1993 con el episodio "Krusty Gets Kancelled". Esta temporada es conocida por su humor ingenioso, personajes memorables y episodios icónicos que continúan con el legado de la serie.</p>
+            
+            <div class="episode-links">
+              <a href="video/los simpson_4_1.mp4" onclick="changeVideo('DigctFieJH0')"  target="video-frame">Episodio 1</a>
+              <a href="video/los simpson_4_2.mp4" onclick="changeVideo('KxQwGtjTc38')"  target="video-frame">Episodio 2</a>
+              <a href="video/los simpson_4_3.mp4" onclick="changeVideo('YVFOSvdV7FE')"  target="video-frame">Episodio 3</a>
+              <a href="video/los simpson_4_4.mp4" onclick="changeVideo('QXG4JYdQBoQ')"  target="video-frame">Episodio 4</a>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+      
+      <div class="iframe-container">
+        <iframe name="video-frame" width="560" height="315" src="video/los simpson_1_1.mp4"frameborder="0"   allowfullscreen></iframe>
 
+      </div>
+    </div>
+      
+      
+        
+      
+                
           
-    </main>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+           
+
+    <script src="js/episodios.js"></script>     
+    
+    
 </body>
 </html>
 

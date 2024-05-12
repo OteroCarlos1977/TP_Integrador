@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fandom Page de Los Simpson</title>
+    <link rel="icon" type="image/png" href="Imagenes/cuadro.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    
 </head>
 <body>
-    <header>
+
+    
+    <!--Header con barra navegación -->
+    <header id="header">
         <div class="contenedorImagen">
             <img class="logoNav"  src="Imagenes/sillon.png" alt="icono">
         </div>
+     <!--Barra navegación dispositivos grandes-->   
         <nav class="navbarPc">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -24,6 +30,8 @@
             </ul>
             
         </nav>
+
+        <!--Barra navegación dispositivos pequeños-->  
         <nav class="responsive_navbar">
             <li class="li_res"><a class="link_res" href="index.html">Home</a></li>
             <li class="li_res"><a class="link_res" href="personajes.html">Personajes</a></li>
@@ -39,7 +47,10 @@
             </div>
         
     </header>
+
+    <!--Inicio del main-->
     <main>
+        <!-- Contenedor para el menu lateral-->
         <div class="contenedorMenu" id="contenedorMenu">
             <div class="item">
             <h5>Trivia</h5>
@@ -62,6 +73,8 @@
             <a href=""><img src="Imagenes/personajes/magie.png" alt=""></a>
             </div>
         </div>
+
+        <!-- Contenedor para el mensaje central-->
         <div class="contenedorMensaje" id="contenedorMensaje">
             <p>Bienvenido a la página de fans de Los Simpsons!!!</p>
 
@@ -76,6 +89,8 @@
             <p>Bienvenido a Springfield, donde cada día es una nueva aventura!!!!</p>
             
         </div>
+
+        <!-- Contenedor para la trivia-->
         <div class="contenedorTrivia" id="contenedorTrivia">
             <h4>Cuanto sabes sobre los Simpsons</h4>
             <p id="question">¿El nombre completo de Ned Flanders es Nedward Flanders.?</p>
@@ -85,6 +100,7 @@
             <p id="result"></p>
         </div>
 
+        <!-- Contenedor para el formulario de inicio de sesión-->
         <div class="contenedorLogin" id="login">
             <h1>Iniciar Sesión / Registrarse</h1>
             <p>Si ya tenes cuenta, ingresá tus datos para iniciar sesión</p>
@@ -101,6 +117,8 @@
             </form>
     
         </div>
+
+        <!-- Contenedor para el registro de usuario-->
         <div class="contenedorRegistro" id="registro">
             <h1>Completa tu Registo</h1>
             <form action="" class="formRegistro" id="formRegistro">
@@ -156,20 +174,127 @@
                 
             </form>
         </div>
-
+        <!-- Contenedor para la seccion de memes-->
         <div class="contenedorMeme" id="contenedorMeme">
             <div class="gridImagenes">
               
             </div>
             <button class="salir" id="closeBtn"><i class="fa-solid fa-xmark"></i></button>
           </div>
+
+          <!-- Contenedor para la galería-->
+        
+          <div class="contenedorGaleria" id="contenedorGaleria">
+            <div class="carousel">
+                <!-- list item -->
+                <div class="list">
+                    <div class="item">
+                        <img src="Imagenes/galeria/imagen1.jpg">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="Imagenes/galeria/imagen2.jpg">
+                        <
+                    </div>
+                    <div class="item">
+                        <img src="Imagenes/galeria/imagen3.jpg">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="Imagenes/galeria/imagen4.jpg">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="Imagenes/galeria/imagen10.jpg">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="Imagenes/galeria/imagen5.jpg">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="Imagenes/galeria/imagen6.jpg">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="Imagenes/galeria/imagen7.jpg">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="Imagenes/galeria/imagen8.jpg">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="Imagenes/galeria/imagen9.jpg">
+                        
+                    </div>
+        
+                </div>
+                <!-- list thumnail -->
+                <div class="thumbnail">
+                    <div class="item">
+                        <img src="Imagenes/galeria/imagen1.jpg">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="Imagenes/galeria/imagen2.jpg">
+                        <
+                    </div>
+                    <div class="item">
+                        <img src="Imagenes/galeria/imagen3.jpg">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="Imagenes/galeria/imagen4.jpg">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="Imagenes/galeria/imagen10.jpg">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="Imagenes/galeria/imagen5.jpg">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="Imagenes/galeria/imagen6.jpg">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="Imagenes/galeria/imagen7.jpg">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="Imagenes/galeria/imagen8.jpg">
+                        
+                    </div>
+                    <div class="item">
+                        <img src="Imagenes/galeria/imagen9.jpg">
+                        
+                    </div>
+                </div>
+                <!-- next prev -->
+        
+                <div class="arrows">
+                    <button id="prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+                    <button id="next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+                    <button id="salirGal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                </div>
+                <!-- time running -->
+                <div class="time"></div>
+            </div>
+        </div>
+
+
     </main>
     
     
     <footer>
         <p class="copy">© 2024 - Página de Fans de Los Simpsons. Todos los derechos reservados. Los Simpsons y todos los personajes relacionados son marcas comerciales de Twentieth Century Fox Film Corporation. Este sitio web es una creación de "Grupo 17".</h1>
     </footer>
-    <script src="script.js"></script>
-    <script src="meme.js"></script>
+    
+    <script src="js/script.js"></script>
+    <script src="js/meme.js"></script>
+    <script src="js/galeria.js"></script>
 </body>
 </html>
