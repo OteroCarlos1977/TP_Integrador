@@ -224,12 +224,23 @@ inicioBtn.addEventListener('click', function(event) {
 //Funcionalidad nosotros
 const contenedorNosotros = document.getElementById('contenedorNosotros');
 const nosotros = document.getElementById('nosotros');
+const salirNos = document.getElementById('salirNosBtn');
 
 nosotros.addEventListener('click', function (event) {
     event.preventDefault();
-    console.log("la funcion queire comenzar");
+    
     contenedorNosotros.style.display = 'block';
     ocultarElementos([contenedorMenu, contenedorMensaje, header]);
+});
+
+
+salirNos.addEventListener('click', function (event) {
+    event.preventDefault();
+    
+    contenedorNosotros.style.display = 'none';
+    mostrarElementos([contenedorMenu, contenedorMensaje]);
+    header.style.display ='flex';
+
 });
 
 

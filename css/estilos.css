@@ -704,7 +704,7 @@ input[type="checkbox"], input[type="radio"]
  .arrows{
      position: absolute;
      top: 10%;
-     left:5%;
+     right:5%;
      z-index: 100;
      width: 100px;
      max-width: 30%;
@@ -757,7 +757,7 @@ input[type="checkbox"], input[type="radio"]
      position: absolute;
      bottom: 50px;
      left: 50%;
-     border-radius: 30px;
+     
      animation: showImage .5s linear 1 forwards;
  }
  
@@ -834,7 +834,7 @@ input[type="checkbox"], input[type="radio"]
          height: 220px;
          bottom: 50px;
          left: 50%;
-         border-radius: 20px;
+         
      }
  }
  
@@ -866,18 +866,19 @@ input[type="checkbox"], input[type="radio"]
  ********************************************/
 
  .contenedorNosotros
- {
-    display:none;
-    text-align: center;
-    align-items: center;
-    
- }
 
- .contenedorNosotros h1
  {
+    display: none;
+    position:relative;  
+    margin-top: 2%;   
+    margin-left: 10%;
     color: rgb(187, 200, 7);
-    position: relative;
-    
+    font-size: 16px;
+    width: 70vw;
+    height: 75vh;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align:center;
  }
 
  .container {
@@ -889,11 +890,15 @@ input[type="checkbox"], input[type="radio"]
     
   }
 
+  .container h1
 
-
-  .panel {
+  {
+    margin-top: 20px;
+  }
+  
+ .panel {
     
-    height: 60vh;
+    height: 55vh;
     color: rgb(187, 200, 7);
     cursor: pointer;
     flex: 0.5;
@@ -910,8 +915,7 @@ input[type="checkbox"], input[type="radio"]
     border-radius: 50px;
     
   }
-   
-  
+
   .panel h3 {
     font-size: 24px;
     position: absolute;
@@ -933,9 +937,23 @@ input[type="checkbox"], input[type="radio"]
     transition: opacity 0.3s ease-in 0.4s;
   }
 
-  
-
-
+  .salirNosBtn
+  {
+    position:fixed; 
+    width: 40px;
+    height: 50px;
+    bottom: 22%; 
+    right:22%;
+    z-index: 999; 
+    background: transparent;
+    border: none;
+    color: rgb(187, 200, 7);;
+    font-size: 40px;
+    cursor: pointer;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+  }
 
 
 /*********************************************
