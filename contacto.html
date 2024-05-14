@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Fandom - Contacto</title>
     <link rel="icon" type="image/png" href="Imagenes/cuadro.png">
     <link rel="stylesheet" href="css/contacto.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -34,15 +34,13 @@
             <div class="toggle_btn">
                 <a href=""><i class="fa-solid fa-bars"></i></a>
             </div>
-            <div class="contenedorLog">
-                <a href="login"><i class="fa-solid fa-right-to-bracket" id="loginBtn"></i></a>
-            </div>
+            
         
     </header>
     <main>
-        <article class="contact">
+        <section class="contact">
             <div class="contact-form-container"> 
-                <div class="contact-form">
+                <div class="contact-form" id="formContacto">
                     <form action="#" method="post">
                         <label for="usuario">Nombre de Usuario:</label>
                         <input type="text" id="usuario" name="usuario" required>
@@ -55,13 +53,13 @@
 
                         <label>¿Eres fanático de Los Simpsons?</label>
                         <div class="radio-container">
-                            <input type="radio" id="si" name="fanatico" value="si" required>
-                            <label for="si">Super fanático</label>
-                            <input type="radio" id="no" name="fanatico" value="no" required>
-                            <label for="no">Meh...</label>
+                            <input type="radio" id="radioSi" name="fanatico" value="si">
+                            <label for="radioSi">Super fanático</label>
+                            <input type="radio" id="radioNo" name="fanatico" value="no">
+                            <label for="radioNo">Meh...</label>
                         </div>
                         <label for="comentario">Dejanos tu comentario</label>
-                        <textarea name="comentario" id="comentario"></textarea>
+                        <textarea name="comentario" id="comentario" required></textarea>
 
                         <button type="submit" class="submit-button">
                             <span class="button-text">Enviar</span>
@@ -70,10 +68,11 @@
                     </form>
                 </div>
             </div>
-        </article>
+        </section>
     </main>
     
-    <script src="login.js"></script>
+    <script src="js/contacto.js"></script>
+    
 </body>
 </html>
 

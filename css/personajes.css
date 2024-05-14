@@ -309,6 +309,37 @@ footer
         overflow-y: auto;
     }
 
+    
+  .navbarPc
+  {
+      display: none;
+  }
+  
+  .navbarPc ul li a 
+  {
+      display: none;
+  }
+
+
+  .toggle_btn a
+  {
+  display: block;
+  font-size: 18px;
+  
+  }
+
+  .responsive_navbar
+  {
+  display: block;
+  }
+
+  .responsive_navbar  .li_res
+  {
+  list-style: none;
+  position: relative;
+  text-decoration: none;
+  }
+
 }
 
 /*********************************************
@@ -342,5 +373,37 @@ footer
         padding: 20px;
         overflow-y: auto;
     }
+
+    
+  .navbarPc
+  {
+      display: none;
+  }
+  
+  .navbarPc ul li a 
+  {
+      display: none;
+  }
+
+  .toggle_btn a
+  {
+  display: block;
+  font-size: 18px;
+  
+  }
+
+  .responsive_navbar
+  {
+  display: block;
+  }
+
+  .responsive_navbar  .li_res
+  {
+  list-style: none;
+  position: relative;
+  text-decoration: none;
+  }
+  
+
 
 }

@@ -1,12 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
     const formRegistro = document.getElementById('formRegistro');
+    const formLogin = document.getElementById('formLogin');
 
     // Expresión regular para validar el formato de correo electrónico
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     // Escuchar el evento submit en el formulario de registro
     formRegistro.addEventListener('submit', function (event) {
-        event.preventDefault(); // Evitar que se envíe el formulario
+        event.preventDefault(); 
 
         // Obtener los valores de los campos
         const nombre = document.getElementById('nombre').value;

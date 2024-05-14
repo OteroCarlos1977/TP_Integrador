@@ -1,0 +1,25 @@
+{
+    "FAQs": [
+      {
+        "pregunta": "¿Quién es el creador de Los Simpsons?",
+        "respuesta": "Los Simpsons fueron creados por Matt Groening."
+      },
+      {
+        "pregunta": "¿Cuántos hijos tienen Homer y Marge?",
+        "respuesta": "Homer y Marge tienen tres hijos: Bart, Lisa y Maggie."
+      },
+      {
+        "pregunta": "¿Cuál es la bebida favorita de Homer?",
+        "respuesta": "La cerveza Duff es la bebida favorita de Homer Simpson."
+      },
+      {
+        "pregunta": "¿Dónde está ambientada la ciudad de Springfield?",
+        "respuesta": "La ubicación exacta de Springfield nunca se ha revelado, lo que ha llevado a especulaciones y teorías de los fans."
+      },
+      {
+        "pregunta": "¿Cuántos años tiene Bart Simpson?",
+        "respuesta": "Bart Simpson tiene 10 años."
+      }
+    ]
+  }
+  

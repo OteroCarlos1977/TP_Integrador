@@ -188,7 +188,7 @@ personajes.forEach (personaje =>{
 const respMenu = document.querySelector('.responsive_navbar');
 const toggleBtn = document.querySelector('.toggle_btn');
 const toggleBtnIcon = document.querySelector ('.toggle_btn i');
-const salirBtn = document.getElementById('salPerBtn');
+
 
 toggleBtn.onclick = function (event) {
     event.preventDefault();

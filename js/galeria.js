@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-const header = document.getElementById('header')
+const header = document.getElementById('header');
 const contenedorGaleria = document.getElementById('contenedorGaleria');
 const contenedorMenu = document.getElementById('contenedorMenu');
 const contenedorMensaje = document.getElementById('contenedorMensaje');

@@ -190,10 +190,12 @@ header {
   width: 100vw;
   height: 100vh;
   
+  
 }
 
 .accordion {
   position: absolute;
+  display: flex;
   top: 10%;
   left: 5%;
   width: 450px;
@@ -226,6 +228,7 @@ header {
   display: none;
   padding: 10px 20px;
   background-color: rgba(0, 0, 0, 0.8);
+  width: 360px;
 }
 
 .accordion-content p {
@@ -270,6 +273,259 @@ header {
   z-index: 100;
 }
 
+/*********************************************
+    ESTILOS RESPONSIVOS 769PX  A 1024PX
+********************************************/
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+  .accordion {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+  }
+
+  .accordion-header {
+    width: 95%;
+  }
+
+  .accordion-content {
+    width: 95%;
+  }
+
+  .iframe-container {
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;  
+    height: 400px; 
+    margin-top: 200px;
+  }
+  
+  iframe {
+    border: none;
+    width: 90%;
+  }
+
+}
+
+
+
+
+/*********************************************
+    ESTILOS RESPONSIVOS 481PX  A 768PX
+********************************************/
+
+
+@media screen and (min-width: 481px)and (max-width: 768px) {
+  
+  body 
+  {
+      background-image: url(../Imagenes/background1.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat
+
+  }
+
+  .navbarPc
+  {
+      display: none;
+  }
+  
+  .navbarPc ul li a 
+  {
+      display: none;
+  }
+
+
+  .toggle_btn a
+  {
+  display: block;
+  font-size: 18px;
+  
+  }
+
+  .responsive_navbar
+  {
+  display: block;
+  }
+
+  .responsive_navbar  .li_res
+  {
+  list-style: none;
+  position: relative;
+  text-decoration: none;
+  }
+
+  .accordion {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+  }
+
+  .accordion-header {
+    width: 95%;
+    font-size: 12px;
+  }
+
+  .accordion-content {
+    width: 70%;
+  }
+
+  .iframe-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;  
+    height: 400px; 
+    margin-top: 300px;
+  }
+  
+  iframe {
+    border: none;
+    width: 90%;
+  }
+
+}
+
+
+/*********************************************
+      ESTILOS RESPONSIVOS 1PX A 480PX
+ ********************************************/
+
+ @media screen and (min-width: 1px)and (max-width: 480px) {
+  
+
+  body 
+  {
+      background-image: url(../Imagenes/backcel3.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat
+
+  }
+
+
+  .navbarPc
+  {
+      display: none;
+  }
+  
+  .navbarPc ul li a 
+  {
+      display: none;
+  }
+
+  .toggle_btn a
+  {
+  display: block;
+  font-size: 18px;
+  
+  }
+
+  .responsive_navbar
+  {
+  display: block;
+  width: 100vw;
+  }
+
+  .responsive_navbar  .li_res
+  {
+  list-style: none;
+  position: relative;
+  text-decoration: none;
+  }
+  
+  .contendorEpisodios {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px; 
+  }
+  
+  .accordion {
+    position: relative;
+    width: calc(100% - 20px); 
+    max-width: 470px; 
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+  }
+  
+  .accordion-header {
+    background-color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: calc(100% - 20px); 
+  }
+  
+  .accordion-content {
+    display: none;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .accordion-content p {
+    margin: 5px 0;
+    font-weight: normal;
+    font-size: 10px;
+  }
+  
+  .episode-links {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .episode-links a {
+    margin: 5px 0;
+    font-size: 12px;
+    padding: 5px;
+    border: 2px solid rgb(187, 200, 7);
+    text-decoration: none;
+    color: rgb(187, 200, 7);
+    border-radius: 20px;
+  }
+  
+  .episode-links a:hover {
+    font-weight: bolder;
+    color: whitesmoke;
+    background-color: rgb(187, 200, 7);
+  }
+  
+  .iframe-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;  
+    height: 300px; 
+    margin-top: 200px;
+  }
+  
+  iframe {
+    border: none;
+    width: 100%;
+  }
+  
+
+
+ 
+}
 
   

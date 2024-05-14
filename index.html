@@ -5,9 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fandom Page de Los Simpson</title>
     <link rel="icon" type="image/png" href="Imagenes/cuadro.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/estilos.css">
     
 </head>
@@ -51,44 +49,46 @@
 
     <!--Inicio del main-->
     <main>
+        <section class="contenedorPrincipal">
         <!-- Contenedor para el menu lateral-->
-        <section class="contenedorMenu" id="contenedorMenu">
-            <div class="item">
-            <h5>Trivia</h5>
-            <a href=""><img src="Imagenes/personajes/lisa.png" alt="" id="trivia"></a>
-            </div>
-            <div class="item">
-            <h5>Memes</h5>
-            <a href=""><img src="Imagenes/personajes/homero.png" alt="" id="meme"></a>
-            </div>
-            <div class="item">
-            <h5>Nosotros</h5>
-            <a href=""><img src="Imagenes/personajes/bart.png" alt="" id="nosotros"></a>
-            </div>
-            <div class="item">
-            <h5>Galeria</h5>
-            <a href=""><img src="Imagenes/personajes/marge.png" alt="" id="galeria"></a>
-            </div>
-            <div class="item">
-            <h5>Foro</h5>
-            <a href=""><img src="Imagenes/personajes/magie.png" alt=""></a>
-            </div>
-        </section>
+            <article class="contenedorMenu" id="contenedorMenu">
+                <div class="item">
+                <h5>Trivia</h5>
+                <a href=""><img src="Imagenes/personajes/lisa.png" alt="" id="trivia"></a>
+                </div>
+                <div class="item">
+                <h5>Memes</h5>
+                <a href=""><img src="Imagenes/personajes/homero.png" alt="" id="meme"></a>
+                </div>
+                <div class="item">
+                <h5>Nosotros</h5>
+                <a href=""><img src="Imagenes/personajes/bart.png" alt="" id="nosotros"></a>
+                </div>
+                <div class="item">
+                <h5>Galeria</h5>
+                <a href=""><img src="Imagenes/personajes/marge.png" alt="" id="galeria"></a>
+                </div>
+                <div class="item">
+                <h5>Foro</h5>
+                <a href=""><img src="Imagenes/personajes/magie.png" alt="" id="foro"></a>
+                </div>
+            </article>
 
-        <!-- Contenedor para el mensaje central-->
-        <section  class="contenedorMensaje" id="contenedorMensaje">
-            <p>Bienvenido a la página de fans de Los Simpsons!!!</p>
+            <!-- Contenedor para el mensaje central-->
+            <article  class="contenedorMensaje" id="contenedorMensaje">
+                <p>Bienvenido a la página de fans de Los Simpsons!!!</p>
 
-            <p>Hola, entusiasta de Springfield!!! ¡Es genial tenerte aquí! Prepárate para sumergirte en el vibrante y colorido mundo de Los Simpsons, donde la diversión y las aventuras nunca terminan.</p>
+                <p>Hola, entusiasta de Springfield!!! ¡Es genial tenerte aquí! Prepárate para sumergirte en el vibrante y colorido mundo de Los Simpsons, donde la diversión y las aventuras nunca terminan.</p>
 
-            <p>Desde las travesuras de Bart hasta las ocurrencias de Homero, pasando por las reflexiones de Lisa y las travesuras de Maggie, este es el lugar perfecto para todos los amantes de la familia amarilla más famosa de la televisión.</p>
+                <p>Desde las travesuras de Bart hasta las ocurrencias de Homero, pasando por las reflexiones de Lisa y las travesuras de Maggie, este es el lugar perfecto para todos los amantes de la familia amarilla más famosa de la televisión.</p>
 
-            <p>Explora nuestras secciones llenas de memes hilarantes, curiosidades fascinantes, debates candentes y todo lo que necesitas para alimentar tu obsesión por Los Simpsons.</p>
+                <p>Explora nuestras secciones llenas de memes hilarantes, curiosidades fascinantes, debates candentes y todo lo que necesitas para alimentar tu obsesión por Los Simpsons.</p>
 
-            <p>Únete a la diversión, registrate (<i class="fa-solid fa-right-to-bracket"></i>), comparte tus momentos favoritos y haz nuevos amigos con quienes celebrar esta icónica serie de animación</p>
+                <p>Únete a la diversión, registrate (<i class="fa-solid fa-right-to-bracket"></i>), comparte tus momentos favoritos y haz nuevos amigos con quienes celebrar esta icónica serie de animación</p>
 
-            <p>Bienvenido a Springfield, donde cada día es una nueva aventura!!!!</p>
-            
+                <p>Bienvenido a Springfield, donde cada día es una nueva aventura!!!!</p>
+                
+            </article>
         </section>
 
         <!-- Contenedor para la trivia-->
@@ -102,7 +102,7 @@
         </section>
 
         <!-- Contenedor para el formulario de inicio de sesión-->
-        <section class="contenedorLogin" id="login">
+        <section class="contenedorLogin" id="contenedorLogin">
             <h1>Iniciar Sesión / Registrarse</h1>
             <p>Si ya tenes cuenta, ingresá tus datos para iniciar sesión</p>
             <form action="" class="formLogin" id="formLogin">
@@ -121,7 +121,7 @@
         </section>
 
         <!-- Contenedor para el registro de usuario-->
-        <section class="contenedorRegistro" id="registro">
+        <section class="contenedorRegistro" id="contenedorRegistro">
             <h1>Completa tu Registo</h1>
             <form action="" class="formRegistro" id="formRegistro">
                 <div class="contenedorInput">
@@ -169,7 +169,7 @@
                     </div>
                     <div class="contenedorInput">
                         <label for="magie">Magie</label>
-                        <input type="radio" name="lisa" id="lisa">
+                        <input type="radio" name="magie" id="magie">
                     </div>
                 </div>
                 <button type="submit" class="regBtn" id="regBtn">Registrarse</button>
@@ -281,31 +281,72 @@
                 <button id="salirGal"><i class="fa fa-times" aria-hidden="true"></i></button>
             </div>
             
-            <div class="time"></div>
+            
 
         </section>
 
         <section class="contenedorNosotros" id="contenedorNosotros">
-            <h1>Somos el Grupo 17</h1>
-            <div class="container">
-                <div class="panel active">
-                    <img src="Imagenes/nosotros/noceda.jpg" alt="">
-                  <h3>Mercedes Noceda</h3>
+            <div class="tituloNosotros">
+            <h1>SOMOS EL GRUPO 17</h1>
+            </div>
+            <div class="nosotrosPrincipal">
+                <div class="card">
+                    <div class="face front">
+                        <img src="Imagenes/nosotros/noseda.jpg" alt="">
+                        <h3>Mercedes Noseda</h3>
+                    </div>
+                    <div class="face back">
+                        <h4>Mercedes Noseda</h4>
+                        <p>Lisa Simpson: "¡Los tubos de ensayo son tus amigos! Ellos no te molestarán ni te dirán que es un error dedicar tu vida a la ciencia."</p>
+                        <div class="link">
+                            <a href="#" style="display:none">Details</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="panel">
-                    <img src="Imagenes/nosotros/otero.jpg" alt="">
-                  <h3>Carlos Otero</h3>
+            
+                <div class="card">
+                    <div class="face front">
+                        <img src="Imagenes/nosotros/eduardo.jpg" alt="">
+                        <h3>Eduardo Carrizo</h3>
+                    </div>
+                    <div class="face back">
+                        <h4>Eduardo Carrizo</h4>
+                        <p>Homer Simpson: "Yo no estaba dormido, estaba borracho."</p>
+                        <div class="link">
+                            <a href="#" style="display:none">Details</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="panel">
-                    <img src="Imagenes/nosotros/agustina.jpg" alt="">
-                  <h3>Agustina de Tobillas</h3>
+                <div class="card">
+                    <div class="face front">
+                        <img src="Imagenes/nosotros/agustina.jpg" alt="">
+                        <h3>Agustina de Tobillas</h3>
+                    </div>
+                    <div class="face back">
+                        <h4>Agustina de Tobillas</h4>
+                        <p>Marge Simpson: "Estoy empezando a pensar que el vino y la cena elegante eran un truco para que me calmaran los nervios. Y por 'empezando a pensar' quiero decir que lo supe todo el tiempo."</p>
+                        <div class="link">
+                            <a href="#" style="display:none">Details</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="panel">
-                    <img src="Imagenes/nosotros/eduardo.jpg" alt="">
-                  <h3>Eduardo Carrizo</h3>
+                <div class="card">
+                    <div class="face front">
+                        <img src="Imagenes/nosotros/otero.jpg" alt="">
+                        <h3>Carlos Otero</h3>
+                    </div>
+                    <div class="face back">
+                        <h4>Carlos Otero</h4>
+                        <p>Bart Simpson: "No soy un mal chico, sólo me dibujan así."</p>
+                        <div class="link">
+                            <a href="#" style="display:none">Details</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contenedorBtn">
+                    <button class="salirNosBtn" id="salirNosBtn"><i class="fa-solid fa-xmark"></i></button>
                 </div>
             </div>
-            <button class="salirNosBtn" id="salirNosBtn"><i class="fa-solid fa-xmark"></i></button>
         </section>
 
     </main>

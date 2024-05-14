@@ -36,13 +36,13 @@ const contenedorMeme = document.getElementById('contenedorMeme');
 const toggleBtn = document.querySelector('.toggle_btn');
 const toggleBtnIcon = document.querySelector ('.toggle_btn i');
 const respMenu = document.querySelector('.responsive_navbar');
-const contenedorLogin = document.getElementById('login');
-const contenedorRegistro = document.getElementById('registro');
+const contenedorLogin = document.getElementById('contenedorLogin');
+const contenedorRegistro = document.getElementById('contenedorRegistro');
 const loginBtn = document.getElementById('loginBtn');
 const newUsuario = document.getElementById('nuevoUsu');
 const meme =document.getElementById('meme');
-const regBtn = document.getElementById('regBtn');
-const inicioBtn = document.getElementById('inicioBtn');
+const foro = document.getElementById('foro');
+
 
 
 
@@ -110,13 +110,13 @@ function endTrivia() {
     let message = "";
 
     if (correctAnswers === 10) {
-        message = "¡Estás en el olimpo de los fans!";
+        message = "¡Estás en el olimpo de los fans! 🏆🏆🏆";
     } else if (correctAnswers >= 7 && correctAnswers <= 9) {
-        message = "¡Eres un gran fan!";
+        message = "¡Eres un gran fan! 🏅🏅🏅";
     } else if (correctAnswers >= 5 && correctAnswers <= 6) {
-        message = "Te faltan varios capítulos para ser un buen fan.";
+        message = "Te faltan varios capítulos para ser un buen fan. 🥺 📺";
     } else {
-        message = "Parece que no eres tan fan de la serie.";
+        message = "Parece que no eres tan fan de la serie. 🫵🤥😤";
     }
 
     questionElement.textContent = "¡Has completado la trivia!";
@@ -124,6 +124,9 @@ function endTrivia() {
     result.style.color = 'rgb(187, 200, 7)'; 
     result.style.display = 'block';
     toggleButtons(false); 
+
+    salirBtn.style.display = 'inline-block';
+    
 
 }
 
@@ -150,12 +153,14 @@ toggleBtn.onclick = function (event) {
     : 'fa-solid fa-bars'
 };
 
+//Función para mostrar elementos
 function mostrarElementos(elementosAMostrar) {
     elementosAMostrar.forEach(elemento => {
         elemento.style.display = 'block';
     });
 }
 
+//Función para ocultar elementos
 function ocultarElementos(elementosAOcultar) {
     elementosAOcultar.forEach(elemento => {
         elemento.style.display = 'none';
@@ -198,6 +203,11 @@ meme.addEventListener('click', function(event) {
     
 });
 
+foro.addEventListener('click', function(event) {
+    event.preventDefault();
+    location.href = 'foro.html';
+
+});
 closeBtn.addEventListener('click', () => {
     mostrarElementos([contenedorMenu, contenedorMensaje]);
     ocultarElementos([contenedorMeme]);
@@ -206,31 +216,20 @@ closeBtn.addEventListener('click', () => {
     document.body.style.backgroundImage = 'url("Imagenes/simpsonsback.jpg")';
 });
 
-regBtn.addEventListener('click', function(event) {
-    event.preventDefault();
-    ocultarElementos([contenedorLogin, contenedorRegistro]);
-    mostrarElementos([contenedorMenu, contenedorMensaje]);
-});
-
-
-inicioBtn.addEventListener('click', function(event) {
-    event.preventDefault();
-    ocultarElementos([contenedorLogin, contenedorRegistro]);
-    mostrarElementos([contenedorMenu, contenedorMensaje]);
-});
 
 
 
 //Funcionalidad nosotros
-const contenedorNosotros = document.getElementById('contenedorNosotros');
 const nosotros = document.getElementById('nosotros');
 const salirNos = document.getElementById('salirNosBtn');
+const contenedorNosotros = document.getElementById('contenedorNosotros');
 
 nosotros.addEventListener('click', function (event) {
     event.preventDefault();
     
     contenedorNosotros.style.display = 'block';
-    ocultarElementos([contenedorMenu, contenedorMensaje, header]);
+    ocultarElementos([contenedorMenu, contenedorMensaje, header, footer]);
+    document.body.style.backgroundImage = 'url("Imagenes/abbeyRoad.jpg")';
 });
 
 
@@ -242,22 +241,6 @@ salirNos.addEventListener('click', function (event) {
     header.style.display ='flex';
 
 });
-
-
-const panels = document.querySelectorAll('.panel')
-
-panels.forEach(panel => {
-    panel.addEventListener('click', () => {
-        removeActiveClasses()
-        panel.classList.add('active')
-    })
-})
-
-function removeActiveClasses() {
-    panels.forEach(panel => {
-        panel.classList.remove('active')
-    })
-}
 
 
 
