@@ -1,119 +1,225 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Episodios</title>
-    <link rel="icon" type="image/png" href="Imagenes/cuadro.png">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="css/episodios.css">
-    
- 
-</head>
-<body>
-  <header>
-    <div class="contenedorImagen">
-        <img class="logoNav"  src="Imagenes/sillon.png" alt="icono">
-    </div>
-    <nav class="navbarPc">
+    <link rel="icon" type="image/png" href="Imagenes/cuadro.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/episodios.css" />
+  </head>
+  <body>
+    <header>
+      <div class="contenedorImagen">
+        <img class="logoNav" src="Imagenes/sillon.png" alt="icono" />
+      </div>
+      <nav class="navbarPc">
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="personajes.html">Personajes</a></li>
-            <li><a href="episodios.html">Episodios</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
-            
+          <li><a href="index.html">Home</a></li>
+          <li><a href="personajes.html">Personajes</a></li>
+          <li><a href="episodios.html">Episodios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
-        
-    </nav>
-    <nav class="responsive_navbar">
+      </nav>
+      <nav class="responsive_navbar">
         <li class="li_res"><a class="link_res" href="index.html">Home</a></li>
-        <li class="li_res"><a class="link_res" href="personajes.html">Personajes</a></li>
-        <li class="li_res"><a class="link_res" href="episodios.html">Episodios</a></li>
-        <li class="li_res"><a class="link_res" href="contacto.html">Contacto</a></li>
+        <li class="li_res">
+          <a class="link_res" href="personajes.html">Personajes</a>
+        </li>
+        <li class="li_res">
+          <a class="link_res" href="episodios.html">Episodios</a>
+        </li>
+        <li class="li_res">
+          <a class="link_res" href="contacto.html">Contacto</a>
+        </li>
+      </nav>
+      <div class="toggle_btn">
+        <a href=""><i class="fa-solid fa-bars"></i></a>
+      </div>
+    </header>
 
-    </nav>
-        <div class="toggle_btn">
-            <a href=""><i class="fa-solid fa-bars"></i></a>
-        </div>
-            
-</header>
-    
-      <div class="contenedorEpisodios">
+    <div class="contenedorEpisodios">
       <div class="accordion">
-        
         <div class="accordion-item">
           <div class="accordion-header">Temporada 1</div>
           <div class="accordion-content">
-            <p>Esta temporada consta de 13 episodios. Se emitió por primera vez el 17 de diciembre de 1989 con el episodio "Simpsons Roasting on an Open Fire" y finalizó el 13 de mayo de 1990 con el episodio "Some Enchanted Evening". Esta temporada estableció las bases para el universo de la serie y presentó a los personajes principales y la dinámica familiar de los Simpson.</p>
-            
+            <p>
+              Esta temporada consta de 13 episodios. Se emitió por primera vez
+              el 17 de diciembre de 1989 con el episodio "Simpsons Roasting on
+              an Open Fire" y finalizó el 13 de mayo de 1990 con el episodio
+              "Some Enchanted Evening". Esta temporada estableció las bases para
+              el universo de la serie y presentó a los personajes principales y
+              la dinámica familiar de los Simpson.
+            </p>
+
             <div class="episode-links">
-              <a href="video/los simpson_1_1.mp4" onclick="changeVideo('DigctFieJH0')"  target="video-frame">Episodio 1</a>
-              <a href="video/los simpson_1_2.mp4" onclick="changeVideo('KxQwGtjTc38')"  target="video-frame">Episodio 2</a>
-              <a href="video/los simpson_1_3.mp4" onclick="changeVideo('YVFOSvdV7FE')"  target="video-frame">Episodio 3</a>
-              <a href="video/los simpson_1_4.mp4" onclick="changeVideo('QXG4JYdQBoQ')"  target="video-frame">Episodio 4</a>
+              <a
+                href="video/los simpson_1_1.mp4"
+                onclick="changeVideo('DigctFieJH0')"
+                target="video-frame"
+                >Episodio 1</a
+              >
+              <a
+                href="video/los simpson_1_2.mp4"
+                onclick="changeVideo('KxQwGtjTc38')"
+                target="video-frame"
+                >Episodio 2</a
+              >
+              <a
+                href="video/los simpson_1_3.mp4"
+                onclick="changeVideo('YVFOSvdV7FE')"
+                target="video-frame"
+                >Episodio 3</a
+              >
+              <a
+                href="video/los simpson_1_4.mp4"
+                onclick="changeVideo('QXG4JYdQBoQ')"
+                target="video-frame"
+                >Episodio 4</a
+              >
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <div class="accordion-header">Temporada 2</div>
           <div class="accordion-content">
-            <p>Esta temporada consta de 22 episodios. Se emitió por primera vez el 11 de octubre de 1990 con el episodio "Bart Gets an F" y finalizó el 11 de julio de 1991 con el episodio "Blood Feud". Esta temporada continuó desarrollando el universo de la serie, presentando nuevos personajes y expandiendo las historias de los personajes principales.</p>
-            
+            <p>
+              Esta temporada consta de 22 episodios. Se emitió por primera vez
+              el 11 de octubre de 1990 con el episodio "Bart Gets an F" y
+              finalizó el 11 de julio de 1991 con el episodio "Blood Feud". Esta
+              temporada continuó desarrollando el universo de la serie,
+              presentando nuevos personajes y expandiendo las historias de los
+              personajes principales.
+            </p>
+
             <div class="episode-links">
-              <a href="video/los simpson_2_1.mp4" onclick="changeVideo('DigctFieJH0')"  target="video-frame">Episodio 1</a>
-              <a href="video/los simpson_2_2.mp4" onclick="changeVideo('KxQwGtjTc38')"  target="video-frame">Episodio 2</a>
-              <a href="video/los simpson_2_3.mp4" onclick="changeVideo('YVFOSvdV7FE')"  target="video-frame">Episodio 3</a>
-              <a href="video/los simpson_2_4.mp4" onclick="changeVideo('QXG4JYdQBoQ')"  target="video-frame">Episodio 4</a>
+              <a
+                href="video/los simpson_2_1.mp4"
+                onclick="changeVideo('DigctFieJH0')"
+                target="video-frame"
+                >Episodio 1</a
+              >
+              <a
+                href="video/los simpson_2_2.mp4"
+                onclick="changeVideo('KxQwGtjTc38')"
+                target="video-frame"
+                >Episodio 2</a
+              >
+              <a
+                href="video/los simpson_2_3.mp4"
+                onclick="changeVideo('YVFOSvdV7FE')"
+                target="video-frame"
+                >Episodio 3</a
+              >
+              <a
+                href="video/los simpson_2_4.mp4"
+                onclick="changeVideo('QXG4JYdQBoQ')"
+                target="video-frame"
+                >Episodio 4</a
+              >
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <div class="accordion-header">Temporada 3</div>
           <div class="accordion-content">
-            <p>Esta temporada consta de 24 episodios. Se emitió por primera vez el 19 de septiembre de 1991 con el episodio "Stark Raving Dad" y finalizó el 7 de agosto de 1992 con el episodio "Brother, Can You Spare Two Dimes?". Esta temporada fue muy aclamada y se considera una de las mejores de la serie, presentando episodios memorables y continuando con el desarrollo de los personajes y las historias.</p>
-            
+            <p>
+              Esta temporada consta de 24 episodios. Se emitió por primera vez
+              el 19 de septiembre de 1991 con el episodio "Stark Raving Dad" y
+              finalizó el 7 de agosto de 1992 con el episodio "Brother, Can You
+              Spare Two Dimes?". Esta temporada fue muy aclamada y se considera
+              una de las mejores de la serie, presentando episodios memorables y
+              continuando con el desarrollo de los personajes y las historias.
+            </p>
+
             <div class="episode-links">
-              <a href="video/los simpson_3_1.mp4" onclick="changeVideo('DigctFieJH0')"  target="video-frame">Episodio 1</a>
-              <a href="video/los simpson_3_2.mp4" onclick="changeVideo('KxQwGtjTc38')"  target="video-frame">Episodio 2</a>
-              <a href="video/los simpson_3_3.mp4" onclick="changeVideo('YVFOSvdV7FE')"  target="video-frame">Episodio 3</a>
-              <a href="video/los simpson_3_4.mp4" onclick="changeVideo('QXG4JYdQBoQ')"  target="video-frame">Episodio 4</a>
+              <a
+                href="video/los simpson_3_1.mp4"
+                onclick="changeVideo('DigctFieJH0')"
+                target="video-frame"
+                >Episodio 1</a
+              >
+              <a
+                href="video/los simpson_3_2.mp4"
+                onclick="changeVideo('KxQwGtjTc38')"
+                target="video-frame"
+                >Episodio 2</a
+              >
+              <a
+                href="video/los simpson_3_3.mp4"
+                onclick="changeVideo('YVFOSvdV7FE')"
+                target="video-frame"
+                >Episodio 3</a
+              >
+              <a
+                href="video/los simpson_3_4.mp4"
+                onclick="changeVideo('QXG4JYdQBoQ')"
+                target="video-frame"
+                >Episodio 4</a
+              >
             </div>
           </div>
         </div>
         <div class="accordion-item">
           <div class="accordion-header">Temporada 4</div>
           <div class="accordion-content">
-            <p>Esta temporada consta de 22 episodios. Se emitió por primera vez el 24 de septiembre de 1992 con el episodio "Kamp Krusty" y finalizó el 13 de mayo de 1993 con el episodio "Krusty Gets Kancelled". Esta temporada es conocida por su humor ingenioso, personajes memorables y episodios icónicos que continúan con el legado de la serie.</p>
-            
+            <p>
+              Esta temporada consta de 22 episodios. Se emitió por primera vez
+              el 24 de septiembre de 1992 con el episodio "Kamp Krusty" y
+              finalizó el 13 de mayo de 1993 con el episodio "Krusty Gets
+              Kancelled". Esta temporada es conocida por su humor ingenioso,
+              personajes memorables y episodios icónicos que continúan con el
+              legado de la serie.
+            </p>
+
             <div class="episode-links">
-              <a href="video/los simpson_4_1.mp4" onclick="changeVideo('DigctFieJH0')"  target="video-frame">Episodio 1</a>
-              <a href="video/los simpson_4_2.mp4" onclick="changeVideo('KxQwGtjTc38')"  target="video-frame">Episodio 2</a>
-              <a href="video/los simpson_4_3.mp4" onclick="changeVideo('YVFOSvdV7FE')"  target="video-frame">Episodio 3</a>
-              <a href="video/los simpson_4_4.mp4" onclick="changeVideo('QXG4JYdQBoQ')"  target="video-frame">Episodio 4</a>
+              <a
+                href="video/los simpson_4_1.mp4"
+                onclick="changeVideo('DigctFieJH0')"
+                target="video-frame"
+                >Episodio 1</a
+              >
+              <a
+                href="video/los simpson_4_2.mp4"
+                onclick="changeVideo('KxQwGtjTc38')"
+                target="video-frame"
+                >Episodio 2</a
+              >
+              <a
+                href="video/los simpson_4_3.mp4"
+                onclick="changeVideo('YVFOSvdV7FE')"
+                target="video-frame"
+                >Episodio 3</a
+              >
+              <a
+                href="video/los simpson_4_4.mp4"
+                onclick="changeVideo('QXG4JYdQBoQ')"
+                target="video-frame"
+                >Episodio 4</a
+              >
             </div>
           </div>
         </div>
-       
       </div>
-      
-      <div class="iframe-container">
-        <iframe name="video-frame" width="560" height="315" src="video/los simpson_1_1.mp4"frameborder="0"   allowfullscreen></iframe>
 
+      <div class="iframe-container">
+        <iframe
+          name="video-frame"
+          width="560"
+          height="315"
+          src="video/los simpson_1_1.mp4"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
-      
-      
-        
-      
-                
-          
-           
 
-    <script src="js/episodios.js"></script>     
-    
-    
-</body>
+    <script src="js/episodios.js"></script>
+  </body>
 </html>
-

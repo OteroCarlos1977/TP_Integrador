@@ -297,7 +297,7 @@ header {
   .iframe-container {
     position: absolute;
     bottom: 60px;
-    left: 0;
+    left: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -381,7 +381,7 @@ header {
   .iframe-container {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 5%;
     display: flex;
     justify-content: center;
     align-items: center;

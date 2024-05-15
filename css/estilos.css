@@ -227,7 +227,8 @@ header {
  ********************************************/
 .contenedorMensaje
 {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: 40px 60px; 
     color: rgb(187, 200, 7);
     font-size: 16px;
@@ -238,9 +239,14 @@ header {
     padding: 20px;
 }
 
+.contenedorMenu p
+{
+    font-size: clamp(12px, 2vw, 16px);
+    flex-grow: 1;
+}
 .contenedorMensaje p::first-letter
 {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: bolder;
     color: rgb(132, 17, 226);
 }
@@ -1079,6 +1085,17 @@ footer
     text-align: center;
     overflow: hidden;
 }
+
+.contenedorMensaje p
+{
+    font-size: 14px;
+}
+.contenedorMensaje p::first-letter
+{
+    font-size: 22px;
+    font-weight: bolder;
+    color: rgb(132, 17, 226);
+}
     
     .gridImagenes img 
     {
@@ -1491,6 +1508,10 @@ footer
 
  @media screen and (min-width: 1px)and (max-width: 480px) {
 
+body{
+    background-image: url(../Imagenes/backcel4.jpeg);
+}
+
     .contenedorPrincipal
     {
         display: inline-block;
@@ -1589,6 +1610,10 @@ footer
         overflow-y: hidden;
     }
 
+    .contenedorMensaje p
+{
+    font-size: 12px;
+}
     .contenedorMensaje p::first-letter
 {
     font-size: 16px;

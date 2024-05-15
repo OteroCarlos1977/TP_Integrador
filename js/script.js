@@ -45,11 +45,15 @@ const foro = document.getElementById('foro');
 
 
 
+// Inicio de la trivia al hacer click en la imagen de Lisa
+trivia.addEventListener('click', function(event) {
+    event.preventDefault();
+    startTrivia();
+});
 
 // Inicio de la trivia al hacer click en la imagen de Lisa
 trivia.addEventListener('click', function(event) {
     event.preventDefault();
-    document.body.style.backgroundImage = 'url("Imagenes/background3.jpeg")';
     startTrivia();
 });
 
@@ -177,7 +181,6 @@ salirBtn.addEventListener('click', () => {
     ocultarElementos([contenedorTrivia]);
     header.style.display = 'flex'
 
-    document.body.style.backgroundImage = 'url("Imagenes/simpsonsback.jpg")';
 });
 
 
@@ -199,8 +202,7 @@ meme.addEventListener('click', function(event) {
     event.preventDefault();
     ocultarElementos([contenedorMenu, contenedorMensaje, header]);
     mostrarElementos([contenedorMeme]);
-    document.body.style.backgroundImage = 'url("Imagenes/sillon.jpg")';
-    
+       
 });
 
 foro.addEventListener('click', function(event) {
@@ -213,7 +215,6 @@ closeBtn.addEventListener('click', () => {
     ocultarElementos([contenedorMeme]);
     header.style.display ='flex';
 
-    document.body.style.backgroundImage = 'url("Imagenes/simpsonsback.jpg")';
 });
 
 
