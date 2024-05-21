@@ -37,6 +37,16 @@ toggleBtn.onclick = function (event) {
     ? 'fa-solid fa-xmark'
     : 'fa-solid fa-bars'
 };
+
+
+//Función cambiar videos
+function changeVideo(videoId) {
+  var iframe = document.getElementById('video-frame');
+  var videoSrc = "https://www.youtube.com/embed/" + videoId + "?autoplay=1";
+  iframe.src = videoSrc;
+  iframe.setAttribute("allow", "autoplay; encrypted-media");
+}
+
 });
        
       

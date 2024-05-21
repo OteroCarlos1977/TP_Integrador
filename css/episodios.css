@@ -221,7 +221,7 @@ header {
   font-weight: bold;
   padding: 10px 20px;
   cursor: pointer;
-  width: 200px;
+  width: 300px;
 }
 
 .accordion-content {
@@ -245,7 +245,7 @@ header {
 
 .episode-links a {
   margin: 5px 0;
-  font-size: 14px;
+  font-size: 12px;
 
   padding: 5px;
   border: 2px solid rgb(187, 200, 7);
@@ -258,7 +258,7 @@ header {
 .episode-links a:hover
 {
     font-weight: bolder;
-    scale: 1.2;
+    scale: 1.1;
     color: whitesmoke;
     background-color:rgb(187, 200, 7)  ;
    
